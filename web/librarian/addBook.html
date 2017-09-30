@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>addBook</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+
+<body>
+
+<div id="header_opac">
+	<h1>Online Library Management System</h1>
+</div>
+
+<div id="mylib_content" >
+  	<h2>add book</h2>
+  	<div style="float:left; width:350px;" >
+		<FORM ACTION="change_email_result.php" METHOD="POST"  onsubmit="return checkEmail(this)">
+				<input type="hidden" id="readerToken" name="readerToken" value="" />
+				<table width="350" border="0" cellpadding="3" cellspacing="2">
+				  <tr>
+				    <td align="right">*ID: </td>
+				    <td align="left"><input class="input" type="text" size="25" value="" required/></td>
+				  </tr>
+                  <tr>
+				    <td align="right">*Name: </td>
+				    <td align="left"><input class="input" type="text" size="25" value="" required/></td>
+				  </tr>
+				  <tr>
+				    <td align="right">*Author: </td>
+				    <td align="left"><input class="input" type="text" size="25" value="" required/></td>
+				  </tr>
+				  <tr>
+				    <td align="right">Image: </td>
+				    <td align="left"><input name="submit" type="file" size="25" value="上传图片" /></td>
+				  </tr>
+				  				  <tr>
+				    <td align="right">*Location</td>
+				    <td align="left"><input class="input" type="text" size="25" value="" required/></td>
+				  </tr>
+				  <tr>
+				    <td align="right">*Price: </td>
+				    <td align="left"><input class="input" type="text" size="25" value="" required/></td>
+				  </tr>
+				  <tr>
+				    <td align="right">Publish: </td>
+				    <td align="left"><input class="input" type="text" size="25" value="" /></td>
+				  </tr>
+				  <tr>
+				    <td align="right">*State: </td>
+				    <td align="left"><input class="input" type="text" size="25" value="" required/></td>
+				  </tr>
+                  <tr>
+				    <td align="right">Introduction: </td>
+				    <td align="left"><input class="input" type="text" size="25" value="" /></td>
+				  </tr>
+                  <tr>
+				    <td align="right">Tag: </td>
+				    <td align="left"><input class="input" type="text" size="25" value="" /></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				    <td height="26" colspan="2"><input type="submit" name="submit1" class="btn btn-success"  value="OK"> <input type="button" value="Cancel" class="btn" onclick="javascript:location.href='index.jsp'"/></td>
+				    </tr>
+				</table>
+		</FORM>				
+	</div>
+	
+    
+    <div id="right_con">
+          <h5>Tip</h5>
+          <div id="content_note">
+            <ul>
+               <li>The symbol(*)is mandatory;</li>
+               <li>正确填写您的Email地址后，您可以通过Email登录我的图书馆</li>
+            </ul>
+        </div>
+      </div>
+
+  </div>
+  <div class="clear"></div>
+  <div id="footer"><div id="copy"><p>Northwestern Polytechnical University</p></div></div>
+  
+</body>
+</html>

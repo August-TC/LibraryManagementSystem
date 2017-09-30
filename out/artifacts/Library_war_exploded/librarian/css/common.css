@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Document */
+
+h1, h2, h3, h4, h5, h6, p { padding: 0; margin: 0 auto; font-weight: normal; }
+
+body {background: #fff url(../images/bg.jpg) repeat top left;}
+
+#mylib_content{width:80%;padding:5px;margin-left:250px; height:100%;}
+.mylib_content_center{width:98%; text-align:center; margin-top:130px;}
+#mylib_content h2{font-size:36px; font-weight:bold;padding:5px 0; line-height:150%; border-bottom:1px dashed #ccc; margin-bottom:10px; width:100%; color:#666;}
+#mylib_content .blue{
+    color:#4585E1;
+}
+#mylib_content p{color:#333;}
+#mylib_content p a{ color:#F00;}
+#mylib_info{ background-color:#f7fdff; border:1px solid #d9f6fe; margin:10px auto; font-size:16px;}
+#mylib_info_img{float:left; width:180px; margin:5px; background-color:#fff; text-align:center;}
+#mylib_info_names{float:right; width:580px; text-align:left; padding:10px 0 0 0;  line-height:28px;}
+#mylib_info_names strong{ color:#F00;}
+
+/*-----Table-----*/
+.table_line { border: 1px solid #ccc; }
+.table_line td { padding: 5px; }
+.table_line em { font-style: normal; }
+
+#footer { width: 100%; text-align: center; bottom: 0px; padding: 0; }
+/*-----Footer-----*/
+#copy { color: #333; border-top: 1px solid #ccc; background-color: #999; width: 100%; margin: auto; padding: 15px 0; font-family: Arial, Helvetica, sans-serif; }
+#copy a { color: #333; }
+#copy a:hover { text-decoration: underline; }
+
+/*   header_opac */
+#header_opac { width: 100%; height: 110px; 	margin: auto; padding: 0; position: relative; }
+#header_opac h1 { float: left; width: 750px; text-align: center;font-family: Impact ; color:#CCF; font-size:40px; text-shadow: 2px 2px 0 #FFF,-2px -2px 0 #FFF;}
+/*.header_opac_logo { background-image: url(../images/book.jpg); background-repeat: no-repeat; height: 60px; text-align: left; margin-top: 20px; margin-left: 50px; padding-left: 68px; color: #3a3a3a; font-weight: bold; font-size: 28px; font-family: "黑体"; padding-top: 10px; }
+.header_opac_logo p { padding: 0; margin: 0 auto; font-size: 16px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-weight: normal; color: #0077bc; }*/
+.inner { padding: 20px 5px 20px 50px; }
+.header_right { text-align: right; width: 200px; padding: 0; margin: 0 auto; height: 90px; position: absolute; right: 0; }
+.header_right_top { font-size: 12px; padding: 10px; }
+.header_right_top a { color: #333; }
+.header_right_font { color: #0077bc; }
+.header_right_font a { color: #0077bc; }
+.header_right_font a:hover { text-decoration: underline; }
+
+#navsidebar{
+   float:left;
+   width:200px;
+   padding-left:10px;
+}
+
+#nav_mylib{
+   float:left;
+   margin-top:10px;
+   border-right:0px solid #ccc;
+   border-top:0px solid #ccc;
+    list-style: none;
+	display: block;
+	width: 200px;
+	/*position: relative;
+	top: 100px;
+	left: 100px;*/
+	padding: 60px 0 60px 0;
+	background: url(images/shad2.png) no-repeat;
+	-webkit-background-size: 50% 100%;
+}
+#nav_mylib li{
+	/*float:left;
+	width:150px;
+	border-bottom:1px dashed #ccc;
+	padding:7px 0 6px 17px;
+	background-image: url(../images/icon_arr.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;*/
+	margin: 5px 0 0 0;
+}
+#nav_mylib li a{
+    /*color:#333333;*/
+	-webkit-transition: all 0.3s ease-out;
+	background: #cbcbcb url(images/border.png) no-repeat;
+	color: #174867;
+	padding: 7px 15px 7px 15px;
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 150px;
+	display: block;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+}
+
+#nav_mylib li a:hover{
+	background: #ebebeb url(images/border.png) no-repeat;
+	color: #67a5cd;
+	padding: 7px 15px 7px 30px;
+	}
+
+li#nav_mylibhome{
+	font-weight:bold;
+	display:block;
+	background-color: #eee;
+}
+li#nav_mylibhome a{
+	color:#333;
+}
+
+
+#right_con { float: right; width: 350px; text-align: left; border: 1px solid #d9f6fe; background-color: #f7fdff; margin: 10px 20px; }
+#right_con h5 { font-size: 20px; text-align: left; padding: 10px 20px; font-weight: bold; color: #06c; border-bottom: 1px solid #d9f6fe; }
+#content_note { padding: 10px; background-color: #e5e5e5e; font-size: 16px; }
+#content_note ul { padding: 5px 0 0 30px; float: left; }
+#content_note ul li { padding: 2px 0 2px 0; list-style: disc; list-style-type: disc; }
+#content_note ul li a { color: #3274a8; list-style: disc; list-style-type: disc; font-weight: bold; }
+
+.clear { clear: both; width: 1px; height: 1px; display: block; }
