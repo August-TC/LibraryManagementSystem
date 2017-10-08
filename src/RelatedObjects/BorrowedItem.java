@@ -9,7 +9,7 @@ public class BorrowedItem
     private int id;
 
     // This constructor is used for creating a BorrowedItem with data in database
-    public BorrowedItem(String user_id, String book_id, String borrow_date, String borrow_state, int id)
+    public BorrowedItem(int id, String book_id, String borrow_date, String borrow_state, String user_id)
     {
         this.user_id = user_id;
         this.book_id = book_id;
@@ -19,7 +19,7 @@ public class BorrowedItem
     }
 
     //This constructor is used for create a record when borrwing a book, so the default state is "Available"
-    public BorrowedItem(String user_id, String book_id, String borrow_date, int id)
+    public BorrowedItem(int id, String book_id, String borrow_date, String user_id)
     {
         this.user_id = user_id;
         this.book_id = book_id;

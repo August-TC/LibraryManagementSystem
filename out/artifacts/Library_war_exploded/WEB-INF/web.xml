@@ -68,4 +68,13 @@
         <servlet-name>DatabaseTestServlet</servlet-name>
         <url-pattern>/DBTest</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyInfo</servlet-name>
+        <servlet-class>Servlet.ModifyInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyInfo</servlet-name>
+        <url-pattern>/modifyInfo</url-pattern>
+    </servlet-mapping>
 </web-app>

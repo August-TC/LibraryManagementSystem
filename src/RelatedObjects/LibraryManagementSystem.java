@@ -10,6 +10,8 @@ import Database.*;
 
 public class LibraryManagementSystem
 {
+    private Reader crt_reader = null;
+    private Librarian crt_librarian = null;
     private static LibraryManagementSystem ourInstance = new LibraryManagementSystem();
 
     public static LibraryManagementSystem getInstance()
@@ -19,6 +21,16 @@ public class LibraryManagementSystem
 
     private LibraryManagementSystem()
     {
+    }
+
+    public Reader getCrt_reader()
+    {
+        return crt_reader;
+    }
+
+    public Librarian getCrt_librarian()
+    {
+        return crt_librarian;
     }
 
     private Librarian current_librarian;
@@ -106,13 +118,40 @@ public class LibraryManagementSystem
         if (rs.next())
         {
             //if the id is exist
-            rs = statement.executeQuery("SELECT reader_password FROM reader where reader_id =" + id);
+            rs = statement.executeQuery("SELECT * FROM reader where reader_id =" + id);
             while ( rs.next() )
             {
                 if ( rs.getString("reader_password").equals(password))
                 {
                     //password correct
                     System.out.println(id+"Login Successful");
+                    switch (rs.getString("reader_type"))
+                    {
+                        case "Teacher":
+                            Reader teacher = new Teacher(
+                                    rs.getString("reader_id"),
+                                    rs.getString("reader_name"),
+                                    rs.getString("reader_password"),
+                                    rs.getString("reader_state"),
+                                    rs.getString("reader_email"),
+                                    rs.getString("reader_mobile"),
+                                    rs.getInt("reader_fine")
+                            );
+                            crt_reader = teacher;
+                            break;
+                        case "Student":
+                            Reader student = new Student(
+                                    rs.getString("reader_id"),
+                                    rs.getString("reader_name"),
+                                    rs.getString("reader_password"),
+                                    rs.getString("reader_state"),
+                                    rs.getString("reader_email"),
+                                    rs.getString("reader_mobile"),
+                                    rs.getInt("reader_fine")
+                            );
+                            crt_reader = student;
+                            break;
+                    }
                     rs.close();
                     statement.close();
                     connection.close();
