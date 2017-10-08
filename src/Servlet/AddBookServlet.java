@@ -16,22 +16,24 @@ public class AddBookServlet extends HttpServlet
 {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        String add_id = request.getParameter("add_id");
+        String add_copy = request.getParameter("add_id");
         String add_name = request.getParameter("add_name");
         String add_author = request.getParameter("add_author");
         String add_location = request.getParameter("add_location");
-        String add_price = request.getParameter("add_price");
+        String add_quantity = request.getParameter("add_quantity");
         String add_press = request.getParameter("add_press");
         String add_state = request.getParameter("add_state");
         String add_intro = request.getParameter("add_intro");
         String add_tag = request.getParameter("add_tag");
+
+        int quantity = Integer.parseInt(add_quantity);
 
         LibraryManagementSystem library = LibraryManagementSystem.getInstance();
         Librarian librarian = library.getCurrent_librarian();
         String message = "";
         try
         {
-            boolean result = librarian.addBook(add_id,add_name,add_author,add_intro,add_location,add_press,add_state);
+            boolean result = librarian.addBook(add_copy,add_name,add_author,add_intro,add_location,add_press,add_state,quantity);
             if (result == true)
             {
                 message = "Successfully adding a book!";

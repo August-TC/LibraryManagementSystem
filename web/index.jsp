@@ -1,4 +1,5 @@
 ﻿<%@ page import="RelatedObjects.LibraryManagementSystem" %>
+<%@ page import="RelatedObjects.Reader" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -18,7 +19,7 @@
 
 		<div id="navsidebar">
 			<ul id="nav_mylib">
-				<li><a href="index.html" >index</a></li>
+				<li><a href="index.jsp" >index</a></li>
                 <li><a href="accountInformation.html" >accountInformation</a></li>
                 <li><a href="searchBook.jsp" >searchBook</a></li>
                 <li><a href="reserveBook.html" >reserveBook</a></li>
@@ -34,30 +35,33 @@
                 
                 
 		   </div-->
-			<div class="left-w3ls">
+
 			<ul class="address">
+				<%
+					Reader reader = LibraryManagementSystem.getInstance().getCrt_reader();
+				%>
 													<li>
 														<ul class="address-text">
-															<li><b><%=LibraryManagementSystem.getInstance().getCrt_reader().getReader_name()%></b></li></br>
-															<li></li>
+															<li><b>Name: </b></li></br>
+															<li><%=reader.getReader_name()%></li>
 														</ul>
 													</li>
 													<li>
 														<ul class="address-text">
-															<li><b>Overdue books</b></li></br>
-															<li>: 0</li>
+															<li><b>Email: </b></li></br>
+															<li><%=reader.getReader_email()%></li>
 														</ul>
 													</li>
 													<li>
 														<ul class="address-text">
-															<li><b>The earliest should return</b></li></br>
-															<li>: 2017-09-20</li>
+															<li><b>Tel: </b></li></br>
+															<li><%=reader.getReader_TEL()%></li>
 														</ul>
 													</li>
 													<li>
 														<ul class="address-text">
-															<li><b>The book owe</b></li></br>
-															<li>: 4.4yuan</li>
+															<li><b>Type: </b></li></br>
+															<li><%=reader.getReader_type()%></li>
 														</ul>
 													</li>
 			  </ul>
@@ -65,7 +69,7 @@
 				<div class="buttonright">
 					<a href="accountInformation.html" class="play-icon popup-with-zoom-anim">check the information</a>
 				</div>
-			</div>
+
 		</div>
 
         

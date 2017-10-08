@@ -62,13 +62,12 @@
 					<td   width="10%"  align="center">ID</td>
 					<td   width="10%" align="center">Name</td>
 					<td   width="10%" align="center">Author</td>
+					<td   width="10%" align="center">Reference</td>
 					<td   width="10%" align="center">Location</td>
-					<!--td   width="10%" align="center">Price</td-->
 				    <td   width="10%" align="center">Publish</td>
 					<td   width="10%" align="center">State</td>
 					<td   width="20%" align="center">Introduction</td>
                     <!--td   width="10%" align="center">Tags</td-->
-                    <td   width="5%"  align="center"></td>
 				</tr>
 	  <%
 		  Database database = Database.accessDatabase();
@@ -108,14 +107,13 @@
 			      out.println("<form action=\"/delete\" method=\"get\">");
 				  out.println("<tr>");
 				  out.println("<td bgcolor=\"#FFFFFF\" class=\"whitetext\" width=\"10%\">"+book.getBook_id()+"</td>");
-				  request.setAttribute("book_delete","z");
 				  out.println("<td bgcolor=\"#FFFFFF\" class=\"whitetext\"  width=\"10%\">"+book.getBook_name()+"</td>");
 				  out.println("<td bgcolor=\"#FFFFFF\" class=\"whitetext\"  width=\"10%\">"+book.getBook_author()+"</td>");
+				  out.println("<td bgcolor=\"#FFFFFF\" class=\"whitetext\"  width=\"10%\">"+book.getBook_copy()+"</td>");
 				  out.println("<td bgcolor=\"#FFFFFF\" class=\"whitetext\"  width=\"10%\" align=\"center\">"+book.getBook_location()+"</td>");
 				  out.println("<td bgcolor=\"#FFFFFF\" class=\"whitetext\"  width=\"10%\">"+book.getBook_publish()+"</td>");
 				  out.println("<td bgcolor=\"#FFFFFF\" class=\"whitetext\"  width=\"10%\" align=\"center\">"+book.getBook_state()+"</td>");
 				  out.println("<td bgcolor=\"#FFFFFF\" class=\"whitetext\"  width=\"20%\" align=\"center\">"+book.getBook_introduction()+"</td>");
-				  out.println("<td bgcolor=\"#FFFFFF\" class=\"whitetext\"  width=\"10%\" align=\"center\"><input type=\"submit\" value=\"delete\"/></td>");
 				  out.println("</tr>");
 				  out.println("</form>");
 			  }
@@ -136,6 +134,12 @@
 				</tr-->
    
   </table>
+	<form action="/delete" method="post">
+		<p style="margin:10px auto;">
+			<span><input name="del_book" type="text" value="Please enter the id of book" size="30" style="font-size:20px"/></span>
+			<span><input type="submit" value="delete" style="font-size:20px"/></span>
+		</p>
+	</form>
 
 	        <div class="clear"></div>
 </div>

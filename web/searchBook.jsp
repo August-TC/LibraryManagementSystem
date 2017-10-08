@@ -2,6 +2,7 @@
 <%@ page import="RelatedObjects.LibraryManagementSystem" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="RelatedObjects.Book" %>
+<%@ page import="RelatedObjects.Reader" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -28,18 +29,12 @@
 		<div id="navsidebar">
 			<ul id="nav_mylib">
                 <li><a href="searchBook.jsp" >searchBook</a></li>
-				<!--<li><a href="index.jsp" >index</a></li>-->
+				<li><a href="index.jsp" >index</a></li>
                 <li><a href="accountInformation.html" >accountInformation</a></li>
                 <li><a href="reserveBook.html" >reserveBook</a></li>
                 <li><a href="borrowingHistory.jsp" >borrowingHistory</a></li>
                 <li><a href="modifyInformation.jsp" >modifyInformation</a></li>
                 <li><a href="modifyPwd.jsp" >modifyPassword</a></li>
-                <li><a href="book_shelf.php" ></a></li>
-                <li><a href="book_loss.php" ></a></li>
-                <li><a href="redr_lost.php" ></a></li>
-                <li><a href="account.php" ></a></li>
-                <li><a href="fine_pec.php" ></a></li>
-                <li><a href="book_rv.php" ></a></li>
 			</ul>
 		</div>
 
@@ -77,7 +72,7 @@
   
   <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#CCCCCC" class="table_line">
 				<tr bgcolor="#d8d8d8" class="greytext">
-					<td   width="10%">ID</td>
+					<td   width="10%">Reference</td>
 					<td   width="10%">Name</td>
 					<td   width="10%">Author</td>
 					<td   width="10%" align="center">Location</td>
@@ -122,7 +117,7 @@
                       list)
               {
                   out.println("<tr bgcolor=\"#d8d8d8\" class=\"greytext\">");
-                  out.println("<td   width=\"10%\">"+book.getBook_id()+"</td>");
+                  out.println("<td   width=\"10%\">"+book.getBook_copy()+"</td>");
                   out.println("<td   width=\"10%\">"+book.getBook_name()+"</td>");
                   out.println("<td   width=\"10%\">"+book.getBook_author()+"</td>");
                   out.println("<td   width=\"10%\" align=\"center\">"+book.getBook_location()+"</td>");

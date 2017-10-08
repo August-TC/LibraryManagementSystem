@@ -28,10 +28,11 @@ public class DBData
 
     private ArrayList<Reader> readers = new ArrayList<>();
 
-    public ArrayList<Reader> getReaders(Connection connection) throws SQLException
+    public ArrayList<Reader> getReaders(Connection connection, String kw) throws SQLException
     {
+        ArrayList<Reader> list = new ArrayList<>();
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("SELECT * FROM reader");
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM reader WHERE reader_id like '%"+kw+"%' or reader_name like '%"+kw+"%' or reader_email like '%"+kw+"%' or reader_name like '%"+kw+"%'");
         while (resultSet.next())
         {
             switch (resultSet.getString("reader_type"))
@@ -46,7 +47,7 @@ public class DBData
                             resultSet.getString("reader_mobile"),
                             resultSet.getInt("reader_fine")
                     );
-                    readers.add(teacher);
+                    list.add(teacher);
                     break;
                 case "Student":
                     Reader student = new Student(
@@ -58,13 +59,13 @@ public class DBData
                             resultSet.getString("reader_mobile"),
                             resultSet.getInt("reader_fine")
                     );
-                    readers.add(student);
+                    list.add(student);
                     break;
             }
         }
         resultSet.close();
         statement.close();
-        return readers;
+        return list;
     }
 
     public Librarian getLibrarianByID(Connection connection, String id) throws SQLException
@@ -142,6 +143,7 @@ public class DBData
                     resultSet.getString("book_id"),
                     resultSet.getString("book_name"),
                     resultSet.getString("book_author"),
+                    resultSet.getString("book_copy"),
                     resultSet.getString("book_introduction"),
                     resultSet.getString("book_location"),
                     resultSet.getString("book_publish"),
@@ -150,11 +152,11 @@ public class DBData
         }
         return book;
     }
-    
+
     /*
-     * 鍒犻櫎鐗瑰畾鐢ㄦ埛鍑芥暟
-     * @param id 璇昏�呯殑涓婚敭锛岀敤浜庢壘鍒拌琚垹闄ょ殑璇昏��
-     * @return boolean 褰撳彧鍒犻櫎浜嗕竴涓鑰呮椂锛屽垽鏂负鍒犻櫎鎴愬姛锛岃繑鍥瀟rue锛涘叾浣欐儏鍐佃繑鍥瀎alse銆�
+     * 删除特定用户函数
+     * @param id 读者的主键，用于找到要被删除的读者
+     * @return boolean 当只删除了一个读者时，判断为删除成功，返回true；其余情况返回false。
      */
     public Boolean deleteReader(Connection connection, String id) throws SQLException {
         PreparedStatement statement = connection.prepareStatement("DELETE FROM reader WHERE reader_id=?");
@@ -162,68 +164,129 @@ public class DBData
         int count = statement.executeUpdate();
         return count == 1;
     }
-/*
- * 鍒犻櫎鐗瑰畾涔︾睄鍑芥暟
- * @param id 涔︾睄鐨勪富閿紝鐢ㄤ簬鎵惧埌瑕佽鍒犻櫎鐨勪功绫�
- * @return boolean 褰撳彧鍒犻櫎浜嗕竴涓功绫嶆椂锛屽垽鏂负鍒犻櫎鎴愬姛锛岃繑鍥瀟rue锛涘叾浣欐儏鍐佃繑鍥瀎alse銆�
- */
-  public Boolean deleteBook(Connection connection, String id) throws SQLException {
-      PreparedStatement statement = connection.prepareStatement("DELETE FROM books WHERE book_id=?" );
-      statement.setString(1, id);
-      int count = statement.executeUpdate();
-      return count == 1;
-  }
-  /*
-   * 澧炲姞鐗瑰畾鐢ㄦ埛鍑芥暟
-   * @param reader_x Reader鐨剎灞炴�� 
-   * @return boolean 褰撳彧澧炲姞浜嗕竴涓鑰呮椂锛屽垽鏂负澧炲姞鎴愬姛锛岃繑鍥瀟rue锛涘叾浣欐儏鍐佃繑鍥瀎alse銆�
-   */
-  public Boolean addReader(Connection connection, Reader reader) throws SQLException {
-      if(getReaderByID(connection,reader.getReader_id()) != null)
-      {
-          return false;
-      }
-	  PreparedStatement statement = connection.prepareStatement("INSERT INTO reader (reader_id,reader_name,reader_type,reader_password,reader_state,reader_email,reader_mobile,reader_fine) VALUES (?,?,?,?,?,?,?,?)");
-	  statement.setString(1,reader.getReader_id());
-	  statement.setString(2,reader.getReader_name());
-	  statement.setString(3,reader.getReader_type());
-	  statement.setString(4,reader.getReader_password());
-	  statement.setString(5,reader.getReader_state());
-	  statement.setString(6,reader.getReader_email());
-	  statement.setString(7,reader.getReader_TEL());
-	  statement.setInt(8,reader.getReader_fine());
-      int count = statement.executeUpdate();
-      return count == 1;
-  }
- /*
-   * 澧炲姞鐗瑰畾涔︾睄鍑芥暟
-   * @param book_x book鐨剎灞炴�� 
-   * @return boolean 褰撳彧澧炲姞浜嗕竴涓功绫嶆椂锛屽垽鏂负澧炲姞鎴愬姛锛岃繑鍥瀟rue锛涘叾浣欐儏鍐佃繑鍥瀎alse銆�
-   */
-  public Boolean addBook(Connection connection, Book book) throws SQLException {
-      if (getBookByID(connection,book.getBook_id()) != null)
-      {
-          return false;
-      }
-      PreparedStatement statement = connection.prepareStatement("INSERT INTO books (book_id,book_name,book_author,book_introduction,book_location,book_publish,book_state) VALUES(?,?,?,?,?,?,?)");
-	  statement.setString(1,book.getBook_id());
-	  statement.setString(2,book.getBook_name());
-	  statement.setString(3,book.getBook_author());
-	  statement.setString(4,book.getBook_introduction());
-	  statement.setString(5,book.getBook_location());
-	  statement.setString(6,book.getBook_publish());
-	  statement.setString(7,book.getBook_state());
-      int count = statement.executeUpdate();
-	  return count == 1;
-  }
+    /*
+     * 删除特定书籍函数
+     * @param id 书籍的主键，用于找到要被删除的书籍
+     * @return boolean 当只删除了一个书籍时，判断为删除成功，返回true；其余情况返回false。
+     */
+    public Boolean deleteBook(Connection connection, String id) throws SQLException {
+        PreparedStatement statement = connection.prepareStatement("DELETE FROM books WHERE book_id=?" );
+        statement.setString(1, id);
+        int count = statement.executeUpdate();
+        return count == 1;
+    }
+    /*
+     * 增加特定用户函数
+     * @param reader_x Reader的x属性
+     * @return boolean 当只增加了一个读者时，判断为增加成功，返回true；其余情况返回false。
+     */
+    public Boolean addReader(Connection connection, Reader reader) throws SQLException {
+        if(getReaderByID(connection,reader.getReader_id()) != null)
+        {
+            return false;
+        }
+        PreparedStatement statement = connection.prepareStatement("INSERT INTO reader (reader_id,reader_name,reader_type,reader_password,reader_state,reader_email,reader_mobile,reader_fine) VALUES (?,?,?,?,?,?,?,?)");
+        statement.setString(1,reader.getReader_id());
+        statement.setString(2,reader.getReader_name());
+        statement.setString(3,reader.getReader_type());
+        statement.setString(4,reader.getReader_password());
+        statement.setString(5,reader.getReader_state());
+        statement.setString(6,reader.getReader_email());
+        statement.setString(7,reader.getReader_TEL());
+        statement.setInt(8,reader.getReader_fine());
+        int count = statement.executeUpdate();
+        return count == 1;
+    }
+    /*
+      * 增加特定书籍函数
+      * @param book_x book的x属性
+      * @return boolean 当只增加了一个书籍时，判断为增加成功，返回true；其余情况返回false。
+      */
+    public Boolean addBook(Connection connection, Book book) throws SQLException {
+        if (getBookByID(connection,book.getBook_id()) != null)
+        {
+            return false;
+        }
+        PreparedStatement statement = connection.prepareStatement("INSERT INTO books (book_copy,book_name,book_author,book_introduction,book_location,book_publish,book_state,book_id) VALUES(?,?,?,?,?,?,?,?)");
+        statement.setString(1,book.getBook_copy());
+        statement.setString(2,book.getBook_name());
+        statement.setString(3,book.getBook_author());
+        statement.setString(4,book.getBook_introduction());
+        statement.setString(5,book.getBook_location());
+        statement.setString(6,book.getBook_publish());
+        statement.setString(7,book.getBook_state());
+        statement.setString(8,book.getBook_id());
+        int count = statement.executeUpdate();
+        return count == 1;
+    }
+    /*******预定书籍*****/
+    public boolean reserveBook(Connection connection, int reader_id, String reader_type, String book_copy) throws SQLException {
+        Statement statement = connection.createStatement();
+        Boolean flag = false;
+        String sql = "SELECT COUNT(book_id) FROM reserve_books WHERE user_id = " + reader_id + "AND state = 1";//sql查询用户已预定书的数量
+        String sql2 = "SELECT book_id FROM books WHERE book_copy = " + book_copy + "AND book_state = 'Available'";
+        ResultSet resultSet = statement.executeQuery(sql);
+        /*****不同读者的限制***/
+        while(resultSet.next()) {
+            switch (reader_type) {
+                case "Teacher":
+                    if (resultSet.getInt(0) < 15) {
+                        flag = true;
+                    } else {
+                        System.out.println("预定书达到限额");
+                    }
+                    break;
+                case "Student":
+                    if (resultSet.getInt(0) < 10) {
+                        flag = true;
+                    } else {
+                        System.out.println("预定书达到限额");
+                    }
+                    break;
+            }
+        }
+        resultSet.close();
+        statement.close();
 
-    /*******鍊熶功*****/
+        if (flag) {
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(sql2);
+            if (resultSet.first()) {
+                String book_id = resultSet.getString(0);
+                Date now = new Date();
+                String insertSql = "INSERT INTO reserve_books VALUES("+reader_id + ", "+book_id + ", "+ now.toString() + ", 1"+")";
+                String updateSql = "UPDATE books SET book_state = Reserved WHERE book_id = " + book_id;
+                statement.executeUpdate(insertSql);
+                statement.executeUpdate(updateSql);
+            } else {
+                System.out.println("本书已被预约完或借空");
+            }
+            resultSet.close();
+            statement.close();
+        }
+        return true;
+    }
+
+    /*******取消预定书籍*****/
+    public boolean cancelReverse(Connection connection, int reader_id, String book_id)throws SQLException
+    {
+        Statement statement = connection.createStatement();
+        String updateSql = "UPDATE reverse_books SET state = 0 WHERE user_id = " + reader_id +"AND book_id = "+ book_id + "AND state = 1";
+        statement.executeUpdate(updateSql);
+        String sql = "UPDATE books SET book_state = Available WHERE book_id = " + book_id;
+        statement.executeUpdate(sql);
+        System.out.println("取消预约成功");
+        statement.close();
+        return true;
+    }
+
+    /*******借书*****/
     public boolean borrowBook(Connection connection, int reader_id, String reader_type, String book_id) throws SQLException
     {
         Statement statement = connection.createStatement();
-        String sql = "SELECT COUNT(user_id) FROM borrow_books WHERE reader_id = " + reader_id + "AND borrow_state = 1";//sql鏌ヨ鐢ㄦ埛宸插�熶功鐨勬暟閲�
+        String sql = "SELECT COUNT(user_id) FROM borrow_books WHERE reader_id = " + reader_id + "AND borrow_state = 1";//sql查询用户已借书的数量
         ResultSet resultSet = statement.executeQuery(sql);
-        /*****涓嶅悓璇昏�呯殑闄愬埗***/
+        /*****不同读者的限制***/
         while(resultSet.next())
         {
             switch (reader_type) {
@@ -233,7 +296,7 @@ public class DBData
                         String insertSql = "INSERT INTO borrow_books VALUES("+reader_id + ", "+book_id + ", "+ now.toString() + ", 1"+")";
                         statement.executeUpdate(insertSql);
                     }else {
-                        System.out.println("鍊熶功杈惧埌闄愰");
+                        System.out.println("借书达到限额");
                     }
                     break;
 
@@ -243,7 +306,7 @@ public class DBData
                         String insertSql = "INSERT INTO borrow_books VALUES("+reader_id + ", "+book_id + ", "+ now.toString() + ", 1"+")";
                         statement.executeUpdate(insertSql);
                     }else {
-                        System.out.println("鍊熶功杈惧埌闄愰");
+                        System.out.println("借书达到限额");
                     }
                     break;
             }
@@ -253,13 +316,13 @@ public class DBData
         return true;
     }
 
-    /*******杩樹功****/
+    /*******还书****/
     public boolean returnBook(Connection connection, int reader_id, String book_id)throws SQLException
     {
         Statement statement = connection.createStatement();
         String updateSql = "UPDATE borrow_books SET borrow_state = 0 WHERE reader_id = " + reader_id +"AND book_id = "+ book_id + "AND borrow_state = 1";
         statement.executeUpdate(updateSql);
-        System.out.println("杩樹功鎴愬姛");
+        System.out.println("还书成功");
         statement.close();
         return true;
     }
@@ -269,9 +332,9 @@ public class DBData
      * ******/
     public BorrowedItemList getBorrowedBooks(Connection connection, String reader_id)throws SQLException
     {
-    	BorrowedItemList books = null;
+    	BorrowedItemList books = BorrowedItemList.getInstance();
     	Statement statement = connection.createStatement();
-    	String sql = "SELECT * FROM borrow _books WHERE user_id = " + reader_id;
+    	String sql = "SELECT * FROM borrow_books WHERE user_id = '" + reader_id+"'";
     	ResultSet rSet = statement.executeQuery(sql);
     	while (rSet.next()) {
     		int id = Integer.parseInt(rSet.getString("id"));
@@ -347,10 +410,10 @@ public class DBData
      		String author = rSet.getString("content");
      		String booksql = "SELECT * FROM books WHERE book_author = " + author;
      		ResultSet rSet2 = statement2.executeQuery(booksql);
-     		while (rSet2.next()) {
+     		/*while (rSet2.next()) {
     			Book book = new Book(rSet2.getString("book_id"), rSet2.getString("book_name"), rSet2.getString("book_author"), rSet2.getString("book_introduction"), rSet2.getString("book_location"), rSet2.getString("book_publish"), rSet2.getString("book_state"));
     			books.addBook(book);
-			}
+			}*/
  		}
     	return books;
 	}
@@ -369,10 +432,10 @@ public class DBData
      		String book_id = rSet.getString("book_id");
      		String booksql = "SELECT * FROM books WHERE book_id = " + book_id;
      		ResultSet rSet2 = statement2.executeQuery(booksql);
-     		while (rSet2.next()) {
+     		/*while (rSet2.next()) {
     			Book book = new Book(rSet2.getString("book_id"), rSet2.getString("book_name"), rSet2.getString("book_author"), rSet2.getString("book_introduction"), rSet2.getString("book_location"), rSet2.getString("book_publish"), rSet2.getString("book_state"));
     			books.addBook(book);
-			}
+			}*/
  		}
     	return books;
 	}

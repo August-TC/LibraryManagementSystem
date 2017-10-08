@@ -67,31 +67,38 @@ public class Librarian
 
     // [R1-03] Librarian adds books to Library
     /*
-     * 澧炲姞涔︽湰
-     * @param 涔︽湰鍚勫睘鎬�
-     * @return 鎴戣寰楀簲璇ユ敼鎴怋oolean鏉ョ‘瀹氭搷浣滄垚鍔熶簡娌�
+     * 增加书本
+     * @param 书本各属性
+     * @param count 书本的数量
+     * @return
      */
-    public boolean addBook(String book_id,String book_name,String book_author,String book_introduction,String book_location,String book_publish,String book_state) throws SQLException
+    public boolean addBook(String book_copy, String book_name,String book_author,String book_introduction,String book_location,String book_publish,String book_state,int count) throws SQLException
     {
-    	Database database = Database.accessDatabase();
-    	database.startConnection();
-    	DBData dbData = DBData.getInstance();
-        Book book = new Book(book_id, book_name, book_author, book_introduction, book_location, book_publish, book_state);
-    	boolean res = dbData.addBook( database.getConnection(), book);
+        int sum=0;
+        Database database = Database.accessDatabase();
+        database.startConnection();
+        DBData dbData = DBData.getInstance();
+        for(int i=0;i<count;i++){
+            Book book = new Book(book_copy,book_name, book_author, book_introduction, book_location, book_publish);
+            boolean res = dbData.addBook( database.getConnection(), book);
+            if(res)
+                sum++;
+        }
+
         database.closeConnection();
-        return res;
+        return sum==count;
     }
     /*
-     * 澧炲姞璇昏��
-     * @param 璇昏�呭悇灞炴��
+     * 增加读者
+     * @param 读者各属性
      */
 
     // [R1-03] Librarian adds readers to Library
     public boolean addReader(String reader_id, String reader_name, String reader_type, String reader_password, String reader_state, String reader_email, String reader_TEL, int reader_fine) throws SQLException
     {
-    	Database database = Database.accessDatabase();
-    	database.startConnection();
-    	DBData dbData = DBData.getInstance();
+        Database database = Database.accessDatabase();
+        database.startConnection();
+        DBData dbData = DBData.getInstance();
         boolean isSucceed;
         if (reader_type.equals("Teacher")) {
             Teacher reader = new Teacher(reader_id, reader_name, reader_password, reader_state, reader_email, reader_TEL, reader_fine);
@@ -104,32 +111,32 @@ public class Librarian
         return isSucceed;
     }
     /*
-     * 鍒犻櫎涔︽湰
-     * @param id 涔︽湰鐨勪富閿�
+     * 删除书本
+     * @param id 书本的主键
      */
     // [R1-08] Librarian deletes books to Library
     public boolean deleteBook(String id) throws SQLException
     {
-    	Database database = Database.accessDatabase();
-    	database.startConnection();
-    	DBData dbData = DBData.getInstance();
-    	boolean res = dbData.deleteBook(database.getConnection(), id);
-    	database.closeConnection();
-    	return res;
+        Database database = Database.accessDatabase();
+        database.startConnection();
+        DBData dbData = DBData.getInstance();
+        boolean res = dbData.deleteBook(database.getConnection(), id);
+        database.closeConnection();
+        return res;
     }
     /*
-     * 鍒犻櫎璇昏��
-     * @param id 璇昏�呯殑涓婚敭
+     * 删除读者
+     * @param id 读者的主键
      */
     // [R1-14] Librarian deletes readers to Library
     public boolean deleteReader(String id) throws SQLException
     {
-    	Database database = Database.accessDatabase();
-    	database.startConnection();
-    	DBData dbData = DBData.getInstance();
-    	boolean res = dbData.deleteReader(database.getConnection(), id);
-    	database.closeConnection();
-    	return res;
+        Database database = Database.accessDatabase();
+        database.startConnection();
+        DBData dbData = DBData.getInstance();
+        boolean res = dbData.deleteReader(database.getConnection(), id);
+        database.closeConnection();
+        return res;
     }
     // [R2-4] Librarian modify borrowing status of books
     public void modifyStatusofBorrowedBooks(String id, String state) throws SQLException
@@ -175,7 +182,7 @@ public class Librarian
             {
                 String book_id = null;
                 String book_name = null, book_author = null, book_introduction = null, book_location = null, book_publish = null, book_state = null;
-                addBook(book_id, book_name, book_author, book_introduction, book_location, book_publish, book_state);
+                //addBook(book_id, book_name, book_author, book_introduction, book_location, book_publish, book_state);
             }
         }
         else if ( num < actualnum)
@@ -299,7 +306,7 @@ public class Librarian
         Statement statement = connection.createStatement();
 
         //SQL
-        String sql = "UPDATE reader set reader_password=" + password + "where reader_id =" + id;
+        String sql = "UPDATE reader set reader_password=" + password + "where reader_id =\'"+ id+"\'" ;
 
         //execute
         statement.executeUpdate(sql);

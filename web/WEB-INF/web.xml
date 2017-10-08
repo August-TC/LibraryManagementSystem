@@ -77,4 +77,12 @@
         <servlet-name>ModifyInfo</servlet-name>
         <url-pattern>/modifyInfo</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ModifyPW</servlet-name>
+        <servlet-class>Servlet.ModifyPWServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyPW</servlet-name>
+        <url-pattern>/modifyPW</url-pattern>
+    </servlet-mapping>
 </web-app>

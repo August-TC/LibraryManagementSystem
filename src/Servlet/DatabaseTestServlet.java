@@ -38,7 +38,7 @@ public class DatabaseTestServlet extends HttpServlet
             database.startConnection();
             out.println("<table>");
             DBData dbData = DBData.getInstance();
-            ArrayList<Reader> readers = dbData.getReaders(database.getConnection());
+            ArrayList<Reader> readers = dbData.getReaders(database.getConnection(),"");
             for (Reader reader :
                     readers)
             {

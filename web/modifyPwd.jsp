@@ -26,25 +26,19 @@
         <div id="navsidebar">
 			<ul id="nav_mylib">
 				<li><a href="searchBook.jsp" >searchBook</a></li>
-				<!--<li><a href="index.jsp" >index</a></li>-->
+				<li><a href="index.jsp" >index</a></li>
                 <li><a href="accountInformation.html" >accountInformation</a></li>
                 <li><a href="reserveBook.html" >reserveBook</a></li>
                 <li><a href="borrowingHistory.jsp" >borrowingHistory</a></li>
                 <li><a href="modifyInformation.jsp" >modifyInformation</a></li>
                 <li><a href="modifyPwd.jsp" >modifyPassword</a></li>
-                <li><a href="book_shelf.php" ></a></li>
-                <li><a href="book_loss.php" ></a></li>
-                <li><a href="redr_lost.php" ></a></li>
-                <li><a href="account.php" ></a></li>
-                <li><a href="fine_pec.php" ></a></li>
-                <li><a href="book_rv.php" ></a></li>
 			</ul>
 		</div>
 
 <div id="mylib_content">
   		<h2>modify password</h2>
   	  	<div style="float:left; width:350px;" >
-		<FORM ACTION="change_passwd_result.php" METHOD="POST" name="frm_pwd">
+		<FORM ACTION="/modifyPW" METHOD="POST" name="frm_pwd">
 				<table width="350" height="200px" border="0" cellpadding="3" cellspacing="2">
 				  <tr>
 				    <td align="right">Original Password: </td>

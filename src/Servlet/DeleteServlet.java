@@ -20,8 +20,8 @@ public class DeleteServlet extends HttpServlet
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        String book_delete = request.getParameter("book_delete");
-        String reader_delete = request.getParameter("reader_delete");
+        String book_delete = request.getParameter("del_book");
+        String reader_delete = request.getParameter("del_reader");
         System.out.println(book_delete+"\t"+reader_delete);
         LibraryManagementSystem library = LibraryManagementSystem.getInstance();
         Boolean result = false;

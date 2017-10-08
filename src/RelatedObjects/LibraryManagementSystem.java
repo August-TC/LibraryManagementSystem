@@ -234,9 +234,8 @@ public class LibraryManagementSystem
         ArrayList<Book> books = new ArrayList();
         try {
             stmt = conn.createStatement();
-            String sql = "SELECT book_id, book_name, book_author, "
-                    + "book_introduction, book_location, "
-                    + "book_publish, book_state FROM books "
+            String sql = "SELECT *"
+                    + "FROM books "
                     +"WHERE book_name LIKE '%"+name+"%'";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
@@ -247,7 +246,8 @@ public class LibraryManagementSystem
                 String string5 = rs.getString("book_location");
                 String string7 = rs.getString("book_state");
                 String string6 = rs.getString("book_publish");
-                Book book = new Book(string1, string2, string3, string4, string5, string6, string7);
+                String string8 = rs.getString("book_copy");
+                Book book = new Book(string1, string2, string3, string8, string4, string5, string6, string7);
                 books.add(book);
                 //System.out.println(string1+string2+string3+string4+string5+string6+string7);
             }
@@ -279,10 +279,9 @@ public class LibraryManagementSystem
         ArrayList<Book> books = new ArrayList<>();
         try {
             stmt = conn.createStatement();
-            String sql = "SELECT book_id, book_name, book_author, "
-                    + "book_introduction, book_location, "
-                    + "book_publish, book_state FROM books "
-                    +"WHERE book_id LIKE '%"+id+"%'";
+            String sql = "SELECT *"
+                    + "FROM books "
+                    +"WHERE book_copy LIKE '%"+id+"%'";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 String string1 = rs.getString("book_id");
@@ -292,7 +291,8 @@ public class LibraryManagementSystem
                 String string5 = rs.getString("book_location");
                 String string7 = rs.getString("book_state");
                 String string6 = rs.getString("book_publish");
-                Book book = new Book(string1, string2, string3, string4, string5, string6, string7);
+                String string8 = rs.getString("book_copy");
+                Book book = new Book(string1, string2, string3, string8, string4, string5, string6, string7);
                 books.add(book);
                 //System.out.println(string1+string2+string3+string4+string5+string6+string7);
             }
@@ -324,9 +324,8 @@ public class LibraryManagementSystem
         ArrayList<Book> books = new ArrayList<>();
         try {
             stmt = conn.createStatement();
-            String sql = "SELECT book_id, book_name, book_author, "
-                    + "book_introduction, book_location, "
-                    + "book_publish, book_state FROM books "
+            String sql = "SELECT *"
+                    + "FROM books "
                     +"WHERE book_author LIKE '%"+auther+"%'";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
@@ -337,7 +336,8 @@ public class LibraryManagementSystem
                 String string5 = rs.getString("book_location");
                 String string7 = rs.getString("book_state");
                 String string6 = rs.getString("book_publish");
-                Book book = new Book(string1, string2, string3, string4, string5, string6, string7);
+                String string8 = rs.getString("book_copy");
+                Book book = new Book(string1, string2, string3, string8, string4, string5, string6, string7);
                 books.add(book);
                 //System.out.println(string1+string2+string3+string4+string5+string6+string7);
             }
@@ -369,10 +369,9 @@ public class LibraryManagementSystem
         ArrayList<Book> books = new ArrayList<>();
         try {
             stmt = conn.createStatement();
-            String sql = "SELECT book_id, book_name, book_author, "
-                    + "book_introduction, book_location, "
-                    + "book_publish, book_state FROM books "
-                    +"WHERE book_publish LIKE '%"+press+"%'";
+            String sql = "SELECT *"
+                    + "FROM books "
+                    +"WHERE book_press LIKE '%"+press+"%'";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 String string1 = rs.getString("book_id");
@@ -382,7 +381,8 @@ public class LibraryManagementSystem
                 String string5 = rs.getString("book_location");
                 String string7 = rs.getString("book_state");
                 String string6 = rs.getString("book_publish");
-                Book book = new Book(string1, string2, string3, string4, string5, string6, string7);
+                String string8 = rs.getString("book_copy");
+                Book book = new Book(string1, string2, string3, string8, string4, string5, string6, string7);
                 books.add(book);
                 //System.out.println(string1+string2+string3+string4+string5+string6+string7);
             }

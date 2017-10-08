@@ -1,10 +1,13 @@
 package RelatedObjects;
 
+import java.util.UUID;
+
 public class Book
 {
     private String book_id;
     private String book_name;
     private String book_author;
+    private String book_copy;
     //private String book_img;
     private String book_introduction;
     private String book_location;
@@ -12,12 +15,12 @@ public class Book
     private String book_publish;
     private String book_state;
 
-    // This constructor is used for creating a book with data in database
-    public Book(String book_id, String book_name, String book_author, String book_introduction, String book_location, String book_publish, String book_state)
+    public Book(String book_id, String book_name, String book_author, String book_copy, String book_introduction, String book_location, String book_publish, String book_state)
     {
         this.book_id = book_id;
         this.book_name = book_name;
         this.book_author = book_author;
+        this.book_copy = book_copy;
         this.book_introduction = book_introduction;
         this.book_location = book_location;
         this.book_publish = book_publish;
@@ -25,14 +28,15 @@ public class Book
     }
 
     //This constructor is used for librarian to add books, so the default state is "Available"
-    public Book(String book_id, String book_name, String book_author, String book_introduction, String book_location, String book_publish)
+    public Book(String book_copy, String book_name, String book_author, String book_introduction, String book_location, String book_publish)
     {
-        this.book_id = book_id;
+        this.book_copy = book_id;
         this.book_name = book_name;
         this.book_author = book_author;
         this.book_introduction = book_introduction;
         this.book_location = book_location;
         this.book_publish = book_publish;
+        this.book_id = UUID.randomUUID().toString();
         book_state = "Available";
     }
 
@@ -107,5 +111,13 @@ public class Book
     public void setBook_state(String book_state)
     {
         this.book_state = book_state;
+    }
+
+    public String getBook_copy() {
+        return book_copy;
+    }
+
+    public void setBook_copy(String book_copy) {
+        this.book_copy = book_copy;
     }
 }

@@ -1,3 +1,7 @@
+<%@ page import="Database.*" %>
+<%@ page import="RelatedObjects.Reader" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.sql.SQLException" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -19,23 +23,22 @@
 
   <div id="submenu"> 
   
-    <input type="button" value="Return" onclick="javascript:location.href='index.jsp'"/>
+    <input type="button" value="Return" onclick="javascript:location.href='librarian_index.jsp'"/>
         
     <form action="" method="post" name="frm_hist" id="f">
-   	    <p style=" margin:10px auto; color:#666">
-        <INPUT TYPE="radio" NAME="para_string" value="name" onclick="frm_hist.submit();" style="font-size:20px" checked>By ID
-		<INPUT TYPE="radio" NAME="para_string" value="ISBN"  onclick="frm_hist.submit();" style="font-size:20px">By Name
-        <INPUT TYPE="radio" NAME="para_string" value="author"  onclick="frm_hist.submit();" style="font-size:20px">By Email
-        <INPUT TYPE="radio" NAME="para_string" value="press"  onclick="frm_hist.submit();" style="font-size:20px">By Tel
-   		 &nbsp;&nbsp;&nbsp;</p>
-    </form>
-    
-    <form action="" method="post">
         <p style="margin:10px auto;">
-        <span><input type="text" value="Please enter keywords" size="30" style="font-size:20px"/></span>
-        <span><input type="submit" value="search" style="font-size:20px"/></span>
+        <span><input name="search" type="text" value="Please enter keywords" size="30" style="font-size:20px"/></span>
+        <span><input type="submit" value="search" onclick="sel()" style="font-size:20px"/></span></p>
     </form>
-        </p>
+	  <script language="javascript">
+
+          function sel(){
+
+              document.frm_hist.submit();
+
+          }
+
+	  </script>
   </div>   
   
   
@@ -43,24 +46,58 @@
 				<tr bgcolor="#d8d8d8" class="greytext">
 					<td   width="10%"  align="center">ID</td>
 					<td   width="15%" align="center">Name</td>
+					<td   width="10%" align="center">Type</td>
 					<td   width="10%" align="center">State</td>
 					<td   width="25%" align="center">Email</td>
 					<td   width="25%" align="center">Tel</td>
-				    <td   width="10%" align="center">Type</td>
-                    <td   width="5%"  align="center"></td>
+                    <td   width="5%"  align="center">Fine</td>
 				</tr>
-                <tr>
-					<td bgcolor="#FFFFFF" class="whitetext" width="10%">1</td>
-					<td bgcolor="#FFFFFF" class="whitetext" width="15%"></td>
-					<td bgcolor="#FFFFFF" class="whitetext" width="10%"></td>
-					<td bgcolor="#FFFFFF" class="whitetext" width="25%"></td>
-					<td bgcolor="#FFFFFF" class="whitetext" width="25%"></td>
-					<td bgcolor="#FFFFFF" class="whitetext" width="10%"></td>
-					<td bgcolor="#FFFFFF" class="whitetext" width="5%"><input type="submit" value="delete"/></td>
-				</tr>
+	  <%
+		  Database database = Database.accessDatabase();
+		  DBData dbData = DBData.getInstance();
+		  String search = "";
+		  database.startConnection();
+		  search = request.getParameter("search");
+		  System.out.println(search);
+		  database.startConnection();
+		  ArrayList<Reader> readers = null;
+		  try
+		  {
+			  readers = dbData.getReaders(database.getConnection(),search);
+			  database.closeConnection();
+		  } catch (SQLException e)
+		  {
+			  e.printStackTrace();
+		  }
+
+		  if (readers!= null && !(readers.isEmpty()))
+		  {
+			  for (Reader reader :
+					  readers)
+			  {
+			      %>
+	  <tr>
+		  <td bgcolor="#FFFFFF" class="whitetext" width="10%"><%=reader.getReader_id()%></td>
+		  <td bgcolor="#FFFFFF" class="whitetext" width="15%"><%=reader.getReader_name()%></td>
+		  <td bgcolor="#FFFFFF" class="whitetext" width="10%"><%=reader.getReader_type()%></td>
+		  <td bgcolor="#FFFFFF" class="whitetext" width="10%"><%=reader.getReader_state()%></td>
+		  <td bgcolor="#FFFFFF" class="whitetext" width="25%"><%=reader.getReader_email()%></td>
+		  <td bgcolor="#FFFFFF" class="whitetext" width="25%"><%=reader.getReader_TEL()%></td>
+		  <td bgcolor="#FFFFFF" class="whitetext" width="5%"><%=reader.getReader_fine()%></td>
+	  </tr>
+	  <%
+			  }
+		  }
+	  %>
+
    
   </table>
-
+	<form action="/delete" method="post">
+		<p style="margin:10px auto;">
+			<span><input name="del_reader" type="text" value="Please enter the id of reader" size="30" style="font-size:20px"/></span>
+			<span><input type="submit" value="delete" style="font-size:20px"/></span>
+		</p>
+	</form>
 	        <div class="clear"></div>
 </div>
 
