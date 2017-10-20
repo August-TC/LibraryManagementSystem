@@ -38,7 +38,7 @@
 <div id="mylib_content">
   		<h2>modify password</h2>
   	  	<div style="float:left; width:350px;" >
-		<FORM ACTION="/modifyPW" METHOD="POST" name="frm_pwd">
+		<FORM ACTION="modifyPW" METHOD="POST" name="frm_pwd">
 				<table width="350" height="200px" border="0" cellpadding="3" cellspacing="2">
 				  <tr>
 				    <td align="right">Original Password: </td>

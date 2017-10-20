@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 
 @WebServlet(name = "GetPWServlet")
@@ -57,5 +58,9 @@ public class GetPWServlet extends HttpServlet
 
         request.setAttribute("message",message);
         request.getRequestDispatcher("message.jsp").forward(request,response);
+//        PrintWriter out = response.getWriter();
+//        out.println("<script language=\"javascript\">\n"+
+//                "window.alert(\"reader change!\");"+
+//                "</script>");
     }
 }

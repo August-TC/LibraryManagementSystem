@@ -92,7 +92,7 @@
 
    
   </table>
-	<form action="/delete" method="post">
+	<form action="delete" method="post">
 		<p style="margin:10px auto;">
 			<span><input name="del_reader" type="text" value="Please enter the id of reader" size="30" style="font-size:20px"/></span>
 			<span><input type="submit" value="delete" style="font-size:20px"/></span>

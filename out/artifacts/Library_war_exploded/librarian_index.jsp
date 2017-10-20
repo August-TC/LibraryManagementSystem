@@ -85,7 +85,7 @@
 			</div>
 
 		</div>
-<form action="/Login" method="post">
+<form action="Login" method="post">
    <center><input type="submit" value="log out"/></center>
 </form>
   <div class="clear">

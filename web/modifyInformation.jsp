@@ -36,7 +36,7 @@
 <div id="mylib_content" >
   	<h2>modify information</h2>
   	<div style="float:left; width:300px;" >
-		<FORM ACTION="/modifyInfo" METHOD="POST">
+		<FORM ACTION="modifyInfo" METHOD="POST">
 				<table width="350" border="0" cellpadding="3" cellspacing="2">
                     <%
                         Reader reader = LibraryManagementSystem.getInstance().getCrt_reader();
