@@ -6,53 +6,52 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d44d516-2728-4536-b173-b81f6d5e14b1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/modifyPwd.html" afterPath="" />
+    <list default="true" id="5d44d516-2728-4536-b173-b81f6d5e14b1" name="Default" comment="check">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/borrow.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/return.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Database/DBData.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Database/DBData.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/RelatedObjects/Book.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/RelatedObjects/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/RelatedObjects/Librarian.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/RelatedObjects/Librarian.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/RelatedObjects/LibraryManagementSystem.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/RelatedObjects/LibraryManagementSystem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/RelatedObjects/Reader.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/RelatedObjects/Reader.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Servlet/AddBookServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Servlet/AddBookServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Servlet/DeleteServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Servlet/DeleteServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Servlet/ModifyInfoServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Servlet/ModifyInfoServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Servlet/LoginServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Database/DBData.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Database/DBData.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/RelatedObjects/Book.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/RelatedObjects/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/RelatedObjects/Librarian.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/RelatedObjects/Librarian.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/RelatedObjects/LibraryManagementSystem.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/RelatedObjects/LibraryManagementSystem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/RelatedObjects/Reader.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/RelatedObjects/Reader.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Servlet/AddBookServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Servlet/AddBookServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Servlet/DeleteServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Servlet/DeleteServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Servlet/ModifyInfoServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Servlet/ModifyInfoServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Servlet/LoginServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/accountInformation.html" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/accountInformation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/borrowingHistory.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/borrowingHistory.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/deleteBook.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/deleteBook.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/deleteReader.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/deleteReader.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/addBook.html" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/addBook.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/addBook.html" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/addBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/addReader.html" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/addReader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/css/common.css" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/deleteBook.html" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/deleteBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/deleteReader.html" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/deleteReader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/librarian_index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/librarian_index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/modifyBook.html" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian/modifyBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian_index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/librarian_index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/modifyInformation.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/modifyInformation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/reserveBook.html" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/reserveBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/modifyPwd.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/modifyPwd.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/searchBook.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/searchBook.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Database/DBData.java" afterPath="$PROJECT_DIR$/src/Database/DBData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Database/Database.java" afterPath="$PROJECT_DIR$/src/Database/Database.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RelatedObjects/Book.java" afterPath="$PROJECT_DIR$/src/RelatedObjects/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RelatedObjects/Librarian.java" afterPath="$PROJECT_DIR$/src/RelatedObjects/Librarian.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RelatedObjects/LibraryManagementSystem.java" afterPath="$PROJECT_DIR$/src/RelatedObjects/LibraryManagementSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RelatedObjects/Reader.java" afterPath="$PROJECT_DIR$/src/RelatedObjects/Reader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlet/AddBookServlet.java" afterPath="$PROJECT_DIR$/src/Servlet/AddBookServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlet/DatabaseTestServlet.java" afterPath="$PROJECT_DIR$/src/Servlet/DatabaseTestServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlet/DeleteServlet.java" afterPath="$PROJECT_DIR$/src/Servlet/DeleteServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlet/ModifyInfoServlet.java" afterPath="$PROJECT_DIR$/src/Servlet/ModifyInfoServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlet/ModifyPWServlet.java" afterPath="$PROJECT_DIR$/src/Servlet/ModifyPWServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/accountInformation.html" afterPath="$PROJECT_DIR$/web/accountInformation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/borrowingHistory.jsp" afterPath="$PROJECT_DIR$/web/borrowingHistory.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/deleteBook.jsp" afterPath="$PROJECT_DIR$/web/deleteBook.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/deleteReader.jsp" afterPath="$PROJECT_DIR$/web/deleteReader.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/Servlet/LoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/addBook.html" afterPath="$PROJECT_DIR$/web/addBook.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/librarian/addBook.html" afterPath="$PROJECT_DIR$/web/librarian/addBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/librarian/addReader.html" afterPath="$PROJECT_DIR$/web/librarian/addReader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/librarian/css/common.css" afterPath="$PROJECT_DIR$/web/librarian/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/librarian/deleteBook.html" afterPath="$PROJECT_DIR$/web/librarian/deleteBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/librarian/deleteReader.html" afterPath="$PROJECT_DIR$/web/librarian/deleteReader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/librarian/librarian_index.jsp" afterPath="$PROJECT_DIR$/web/librarian/librarian_index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/librarian/modifyBook.html" afterPath="$PROJECT_DIR$/web/librarian/modifyBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/librarian_index.jsp" afterPath="$PROJECT_DIR$/web/librarian_index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/modifyInformation.jsp" afterPath="$PROJECT_DIR$/web/modifyInformation.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/modifyPwd.jsp" afterPath="$PROJECT_DIR$/web/modifyPwd.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/reserveBook.html" afterPath="$PROJECT_DIR$/web/reserveBook.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/searchBook.jsp" afterPath="$PROJECT_DIR$/web/searchBook.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -76,158 +75,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DBData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Database/DBData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-              <folding>
-                <marker date="1507482061774" expanded="true" signature="856:876" ph="SELECT * FRO... reader" />
-                <marker date="1507482061774" expanded="true" signature="856:900" ph="SELECT * FRO... reader" />
-                <marker date="1507482061774" expanded="true" signature="856:931" ph="SELECT * FRO... reader" />
-                <marker date="1507482061774" expanded="true" signature="856:1002" ph="SELECT * FRO... reader" />
-                <marker date="1507482061774" expanded="true" signature="2679:2716" ph="SELECT * FRO... reader" />
-                <marker date="1507482061774" expanded="true" signature="3694:3731" ph="SELECT * FRO... reader" />
-                <marker date="1507482061774" expanded="true" signature="5339:5381" ph="SELECT * FRO... books" />
-                <marker date="1507482061774" expanded="true" signature="6266:6302" ph="DELETE FROM " />
-                <marker date="1507482061774" expanded="true" signature="6703:6736" ph="DELETE FROM " />
-                <marker date="1507482061774" expanded="true" signature="7254:7401" ph="INSERT INTO reader... " />
-                <marker date="1507482061774" expanded="true" signature="8319:8458" ph="INSERT INTO books... " />
-                <marker date="1507482061774" expanded="true" signature="9238:9325" ph="SELECT COUNT... reserve_books" />
-                <marker date="1507482061774" expanded="true" signature="9367:9456" ph="SELECT book_... books" />
-                <marker date="1507482061774" expanded="true" signature="10497:10590" ph="INSERT INTO reserve_books... " />
-                <marker date="1507482061774" expanded="true" signature="10629:10684" ph="UPDATE books... " />
-                <marker date="1507482061774" expanded="true" signature="11211:11319" ph="UPDATE rever... " />
-                <marker date="1507482061774" expanded="true" signature="11388:11444" ph="UPDATE books... " />
-                <marker date="1507482061774" expanded="true" signature="11821:11916" ph="SELECT COUNT... borrow_books" />
-                <marker date="1507482061774" expanded="true" signature="12271:12363" ph="INSERT INTO borrow_books... " />
-                <marker date="1507482061774" expanded="true" signature="12733:12825" ph="INSERT INTO borrow_books... " />
-                <marker date="1507482061774" expanded="true" signature="13342:13465" ph="UPDATE borro... " />
-                <marker date="1507482061774" expanded="true" signature="13910:13953" ph="SELECT * FRO... borrow" />
-                <marker date="1507482061774" expanded="true" signature="13910:13954" ph="SELECT * FRO... borrow_books" />
-                <marker date="1507482061774" expanded="true" signature="13910:13970" ph="SELECT * FRO... borrow_books" />
-                <marker date="1507482061774" expanded="true" signature="14605:14648" ph="SELECT * FRO... borrow_books" />
-                <marker date="1507482061774" expanded="true" signature="16037:16075" ph="SELECT * FRO... inquire" />
-                <marker date="1507482061774" expanded="true" signature="16633:16725" ph="SELECT * FRO... borrow_books" />
-                <marker date="1507482061774" expanded="true" signature="16950:16990" ph="SELECT * FRO... books" />
-                <marker date="1507482061774" expanded="true" signature="17696:17732" ph="SELECT * FRO... book_tag" />
-                <marker date="1507482061774" expanded="true" signature="17967:18003" ph="SELECT * FRO... books" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleteBook.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/deleteBook.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="141" column="11" lean-forward="true" selection-start-line="136" selection-start-column="4" selection-end-line="141" selection-end-column="11" />
-              <folding>
-                <marker date="1507478733430" expanded="false" signature="1844:1861" ph="..." />
-                <marker date="1507478733430" expanded="false" signature="1961:1975" ph="..." />
-                <marker date="1507478733430" expanded="false" signature="2040:2054" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Servlet/DeleteServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="librarian_index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="librarian_index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/librarian_index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="44" column="109" lean-forward="false" selection-start-line="44" selection-start-column="109" selection-end-line="44" selection-end-column="109" />
+            <state relative-caret-position="0">
+              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="89" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryManagementSystem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RelatedObjects/LibraryManagementSystem.java">
+      <file leaf-file-name="borrow.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/borrow.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4796">
-              <caret line="372" column="34" lean-forward="false" selection-start-line="372" selection-start-column="34" selection-end-line="372" selection-end-column="34" />
-              <folding>
-                <marker date="1507471628572" expanded="true" signature="1225:1544" ph="INSERT INTO reader... " />
-                <marker date="1507471628572" expanded="true" signature="2331:2636" ph="INSERT INTO reader... " />
-                <marker date="1507471628572" expanded="true" signature="3129:3434" ph="INSERT INTO reader... " />
-                <marker date="1507471628572" expanded="true" signature="3912:3951" ph="SELECT * FRO... reader" />
-                <marker date="1507471628572" expanded="true" signature="4068:4106" ph="SELECT reade... reader" />
-                <marker date="1507471628572" expanded="true" signature="6913:6951" ph="SELECT * FRO... reader" />
-                <marker date="1507471628572" expanded="true" signature="7057:7121" ph="SELECT reade... reader" />
-                <marker date="1507471628572" expanded="true" signature="7057:7127" ph="SELECT reade... reader" />
-                <marker date="1507471628572" expanded="true" signature="8412:8455" ph="SELECT book_... " />
-                <marker date="1507471628572" expanded="true" signature="8412:8513" ph="SELECT *FROM... booksWHERE" />
-                <marker date="1507471628572" expanded="true" signature="10142:10149" ph="SELECT book_... books" />
-                <marker date="1507471628572" expanded="true" signature="10142:10241" ph="SELECT *FROM... booksWHERE" />
-                <marker date="1507471628572" expanded="true" signature="11878:11885" ph="SELECT book_... " />
-                <marker date="1507471628572" expanded="true" signature="11878:11921" ph="SELECT *FROM... booksmissingValue" />
-                <marker date="1507471628572" expanded="true" signature="11878:11973" ph="SELECT *FROM... booksWHERE" />
-                <marker date="1507471628572" expanded="true" signature="11878:11983" ph="SELECT *FROM... booksWHERE" />
-                <marker date="1507471628572" expanded="true" signature="13617:13624" ph="SELECT book_... " />
-                <marker date="1507471628572" expanded="true" signature="13617:13711" ph="SELECT *FROM... booksWHERE" />
-                <marker date="1507471628572" expanded="true" signature="13617:13720" ph="SELECT *FROM... books" />
-                <marker date="1507471628572" expanded="true" signature="16645:16701" ph="SELECT reasd... reader" />
-                <marker date="1507471628572" expanded="true" signature="16645:16703" ph="SELECT reasd... reader" />
-                <marker date="1507471628572" expanded="true" signature="16645:16714" ph="SELECT reade... reader" />
-                <marker date="1507471628572" expanded="true" signature="17334:17389" ph="SELECT passw... reader" />
-                <marker date="1507471628572" expanded="true" signature="17334:17391" ph="SELECT passw... reader" />
-                <marker date="1507471628572" expanded="true" signature="17334:17404" ph="SELECT passw... reader" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Librarian.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RelatedObjects/Librarian.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-957">
-              <caret line="81" column="113" lean-forward="false" selection-start-line="81" selection-start-column="113" selection-end-line="81" selection-end-column="113" />
-              <folding>
-                <marker date="1507469612502" expanded="true" signature="4251:4257" ph="{}" />
-                <marker date="1507469612502" expanded="true" signature="4669:4723" ph="UPDATE reade... " />
-                <marker date="1507469612502" expanded="true" signature="5263:5302" ph="select count... books" />
-                <marker date="1507469612502" expanded="true" signature="6135:6173" ph="select book_... " />
-                <marker date="1507469612502" expanded="true" signature="6317:6346" ph="DELETE from " />
-                <marker date="1507469612502" expanded="true" signature="6990:7047" ph="UPDATE books... " />
-                <marker date="1507469612502" expanded="true" signature="7617:7664" ph="UPDATE reade... " />
-                <marker date="1507469612502" expanded="true" signature="8236:8283" ph="UPDATE reade... " />
-                <marker date="1507469612502" expanded="true" signature="8841:8888" ph="UPDATE reade... " />
-                <marker date="1507469612502" expanded="true" signature="9434:9501" ph="UPDATE reade... " />
-                <marker date="1507469612502" expanded="true" signature="9434:9503" ph="UPDATE reade... " />
-                <marker date="1507469612502" expanded="true" signature="9434:9512" ph="UPDATE reade... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="librarian_index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/librarian/librarian_index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-297">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="33">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleteReader.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/deleteReader.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="96" column="91" lean-forward="false" selection-start-line="96" selection-start-column="91" selection-end-line="96" selection-end-column="91" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#span#1;n#p#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -235,10 +98,9 @@
       <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RelatedObjects/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2343">
+            <state relative-caret-position="2706">
               <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <marker date="1507466262732" expanded="true" signature="1671:1705" ph="UPDATE reade... " />
                 <marker date="1507466262732" expanded="true" signature="1671:1721" ph="UPDATE reade... " />
                 <marker date="1507466262732" expanded="true" signature="1671:1742" ph="UPDATE reade... " />
@@ -253,12 +115,84 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2673">
+              <caret line="81" column="7" lean-forward="false" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="searchBook.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/searchBook.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="2838">
+              <caret line="86" column="10" lean-forward="false" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Librarian.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RelatedObjects/Librarian.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1749">
+              <caret line="82" column="74" lean-forward="false" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
+              <folding>
+                <marker date="1507469612502" expanded="true" signature="4669:4723" ph="UPDATE reade... " />
+                <marker date="1507469612502" expanded="true" signature="5263:5302" ph="select count... books" />
+                <marker date="1507469612502" expanded="true" signature="6135:6173" ph="select book_... " />
+                <marker date="1507469612502" expanded="true" signature="6317:6346" ph="DELETE from " />
+                <marker date="1507469612502" expanded="true" signature="6990:7047" ph="UPDATE books... " />
+                <marker date="1507469612502" expanded="true" signature="7617:7664" ph="UPDATE reade... " />
+                <marker date="1507469612502" expanded="true" signature="8236:8283" ph="UPDATE reade... " />
+                <marker date="1507469612502" expanded="true" signature="8841:8888" ph="UPDATE reade... " />
+                <marker date="1507469612502" expanded="true" signature="9434:9512" ph="UPDATE reade... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LibraryManagementSystem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RelatedObjects/LibraryManagementSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8877">
+              <caret line="284" column="72" lean-forward="false" selection-start-line="284" selection-start-column="72" selection-end-line="284" selection-end-column="72" />
+              <folding>
+                <element signature="e#17952#17953#0" expanded="true" />
+                <element signature="e#17996#17997#0" expanded="true" />
+                <marker date="1508435124230" expanded="true" signature="1225:1544" ph="INSERT INTO reader... " />
+                <marker date="1508435124230" expanded="true" signature="2331:2636" ph="INSERT INTO reader... " />
+                <marker date="1508435124230" expanded="true" signature="3129:3434" ph="INSERT INTO reader... " />
+                <marker date="1508435124230" expanded="true" signature="3912:3951" ph="SELECT * FRO... reader" />
+                <marker date="1508435124230" expanded="true" signature="4068:4106" ph="SELECT reade... reader" />
+                <marker date="1508435124230" expanded="true" signature="6913:6951" ph="SELECT * FRO... reader" />
+                <marker date="1508435124230" expanded="true" signature="7057:7121" ph="SELECT reade... reader" />
+                <marker date="1508435124230" expanded="true" signature="7057:7127" ph="SELECT reade... reader" />
+                <marker date="1508435124230" expanded="true" signature="8412:8455" ph="SELECT book_... " />
+                <marker date="1508435124230" expanded="true" signature="8412:8513" ph="SELECT *FROM... booksWHERE" />
+                <marker date="1508435124230" expanded="true" signature="8412:8556" ph="SELECT *FROM... books" />
+                <marker date="1508435124230" expanded="true" signature="10185:10192" ph="SELECT book_... books" />
+                <marker date="1508435124230" expanded="true" signature="10185:10284" ph="SELECT *FROM... booksWHERE" />
+                <marker date="1508435124230" expanded="true" signature="10185:10303" ph="SELECT *FROM... books" />
+                <marker date="1508435124230" expanded="true" signature="11940:11947" ph="SELECT book_... " />
+                <marker date="1508435124230" expanded="true" signature="11940:11983" ph="SELECT *FROM... booksmissingValue" />
+                <marker date="1508435124230" expanded="true" signature="11940:12035" ph="SELECT *FROM... booksWHERE" />
+                <marker date="1508435124230" expanded="true" signature="11940:12045" ph="SELECT *FROM... booksWHERE" />
+                <marker date="1508435124230" expanded="true" signature="11940:12064" ph="SELECT *FROM... books" />
+                <marker date="1508435124230" expanded="true" signature="13698:13705" ph="SELECT book_... " />
+                <marker date="1508435124230" expanded="true" signature="13698:13792" ph="SELECT *FROM... booksWHERE" />
+                <marker date="1508435124230" expanded="true" signature="13698:13801" ph="SELECT *FROM... books" />
+                <marker date="1508435124230" expanded="true" signature="13698:13820" ph="SELECT *FROM... books" />
+                <marker date="1508435124230" expanded="true" signature="16745:16801" ph="SELECT reasd... reader" />
+                <marker date="1508435124230" expanded="true" signature="16745:16803" ph="SELECT reasd... reader" />
+                <marker date="1508435124230" expanded="true" signature="16745:16814" ph="SELECT reade... reader" />
+                <marker date="1508435124230" expanded="true" signature="17434:17489" ph="SELECT passw... reader" />
+                <marker date="1508435124230" expanded="true" signature="17434:17491" ph="SELECT passw... reader" />
+                <marker date="1508435124230" expanded="true" signature="17434:17504" ph="SELECT passw... reader" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -285,7 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Database/Database.java" />
         <option value="$PROJECT_DIR$/src/RelatedObjects/BorrowedItem.java" />
         <option value="$PROJECT_DIR$/src/RelatedObjects/BorrowedItemList.java" />
         <option value="$PROJECT_DIR$/src/Database/Data.java" />
@@ -299,8 +232,6 @@
         <option value="$PROJECT_DIR$/src/Servlet/GetPWServlet.java" />
         <option value="$PROJECT_DIR$/web/librarian/index.html" />
         <option value="$PROJECT_DIR$/web/librarian/index.jsp" />
-        <option value="$PROJECT_DIR$/src/Servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/web/librarian_index.jsp" />
         <option value="$PROJECT_DIR$/web/librarian/addReader.html" />
         <option value="$PROJECT_DIR$/src/Servlet/SearchServlet.java" />
         <option value="$PROJECT_DIR$/web/deleteBook.html" />
@@ -313,23 +244,28 @@
         <option value="$PROJECT_DIR$/src/Servlet/ModifyPWServlet.java" />
         <option value="$PROJECT_DIR$/src/RelatedObjects/Reader.java" />
         <option value="$PROJECT_DIR$/src/Servlet/ModifyInfoServlet.java" />
-        <option value="$PROJECT_DIR$/web/addBook.html" />
-        <option value="$PROJECT_DIR$/src/Servlet/AddBookServlet.java" />
         <option value="$PROJECT_DIR$/src/RelatedObjects/Librarian.java" />
-        <option value="$PROJECT_DIR$/src/RelatedObjects/Book.java" />
-        <option value="$PROJECT_DIR$/src/RelatedObjects/LibraryManagementSystem.java" />
-        <option value="$PROJECT_DIR$/web/modifyInformation.jsp" />
         <option value="$PROJECT_DIR$/web/reserveBook.html" />
         <option value="$PROJECT_DIR$/web/accountInformation.html" />
-        <option value="$PROJECT_DIR$/web/modifyPwd.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/borrowingHistory.jsp" />
-        <option value="$PROJECT_DIR$/web/searchBook.jsp" />
-        <option value="$PROJECT_DIR$/web/deleteBook.jsp" />
         <option value="$PROJECT_DIR$/src/Servlet/DatabaseTestServlet.java" />
-        <option value="$PROJECT_DIR$/src/Database/DBData.java" />
         <option value="$PROJECT_DIR$/web/deleteReader.jsp" />
         <option value="$PROJECT_DIR$/src/Servlet/DeleteServlet.java" />
+        <option value="$PROJECT_DIR$/web/modifyPwd.jsp" />
+        <option value="$PROJECT_DIR$/web/modifyInformation.jsp" />
+        <option value="$PROJECT_DIR$/web/deleteBook.jsp" />
+        <option value="$PROJECT_DIR$/src/Servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/web/addBook.html" />
+        <option value="$PROJECT_DIR$/src/Database/DBData.java" />
+        <option value="$PROJECT_DIR$/src/Servlet/AddBookServlet.java" />
+        <option value="$PROJECT_DIR$/src/RelatedObjects/Book.java" />
+        <option value="$PROJECT_DIR$/web/searchBook.jsp" />
+        <option value="$PROJECT_DIR$/web/librarian_index.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/RelatedObjects/LibraryManagementSystem.java" />
+        <option value="$PROJECT_DIR$/web/borrow.html" />
+        <option value="$PROJECT_DIR$/web/borrow.jsp" />
+        <option value="$PROJECT_DIR$/src/Database/Database.java" />
       </list>
     </option>
   </component>
@@ -348,7 +284,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
-    <option name="y" value="-1084" />
+    <option name="y" value="-4" />
     <option name="width" value="1922" />
     <option name="height" value="1013" />
   </component>
@@ -390,6 +326,9 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -429,21 +368,16 @@
               <item name="Library" type="b2602c69:ProjectViewProjectNode" />
               <item name="Library" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="librarian" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,6 +389,15 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/librarian/css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -648,16 +591,20 @@
       <workItem from="1506765831149" duration="250000" />
       <workItem from="1507472480839" duration="310000" />
       <workItem from="1507472861191" duration="6213000" />
-      <workItem from="1507455153190" duration="26531000" />
+      <workItem from="1507455153190" duration="27076000" />
+      <workItem from="1507897490777" duration="786000" />
+      <workItem from="1507977265361" duration="1710000" />
+      <workItem from="1507980843636" duration="2320000" />
+      <workItem from="1508420070078" duration="16710000" />
+      <workItem from="1508462999617" duration="1517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89945000" />
+    <option name="totallyTimeSpent" value="113533000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1084" width="1922" height="1013" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="-4" width="1922" height="1013" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -669,20 +616,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955848" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32815966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32815966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116145834" sideWeight="0.42244226" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116145834" sideWeight="0.57755774" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116145834" sideWeight="0.78824836" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116145834" sideWeight="0.21175167" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991131" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955848" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -696,6 +643,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="check" />
+    <option name="LAST_COMMIT_MESSAGE" value="check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -714,44 +665,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/RelatedObjects/LibraryManagementSystem.java</url>
-          <line>249</line>
+          <line>250</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.44-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/sdk/java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/sdk/java/jdk1.8.0_131/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="1335" column="0" lean-forward="false" selection-start-line="1335" selection-start-column="0" selection-end-line="1335" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/sdk/java/jdk1.8.0_131/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="3664" column="0" lean-forward="false" selection-start-line="3664" selection-start-column="0" selection-end-line="3664" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/sdk/java/jdk1.8.0_131/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -826,14 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/librarian_message.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Servlet/AddReaderServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
@@ -845,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,9 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="586">
           <caret line="44" column="5" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -871,7 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,39 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="120" column="90" lean-forward="false" selection-start-line="120" selection-start-column="90" selection-end-line="120" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/addBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="54" column="66" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,31 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlet/AddBookServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modifyInformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="31" column="68" lean-forward="false" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/reserveBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,41 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1964">
-          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="65" column="57" lean-forward="false" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RelatedObjects/BorrowedItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="e#1053#1054#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/modifyPwd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
           <caret line="41" column="48" lean-forward="false" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,26 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RelatedObjects/BorrowedItemList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="e#678#679#0" expanded="false" />
-            <element signature="e#728#729#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RelatedObjects/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="17" column="174" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="174" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,46 +827,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RelatedObjects/LibraryManagementSystem.java">
+    <entry file="file://$PROJECT_DIR$/src/Servlet/DatabaseTestServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4796">
-          <caret line="372" column="34" lean-forward="false" selection-start-line="372" selection-start-column="34" selection-end-line="372" selection-end-column="34" />
+        <state relative-caret-position="363">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/librarian/librarian_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlet/DeleteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/deleteReader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3168">
+          <caret line="96" column="91" lean-forward="false" selection-start-line="96" selection-start-column="91" selection-end-line="96" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/reserveBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modifyPwd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modifyInformation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1023">
+          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/deleteBook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="141" column="11" lean-forward="false" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="11" />
           <folding>
-            <marker date="1507471628572" expanded="true" signature="1225:1544" ph="INSERT INTO reader... " />
-            <marker date="1507471628572" expanded="true" signature="2331:2636" ph="INSERT INTO reader... " />
-            <marker date="1507471628572" expanded="true" signature="3129:3434" ph="INSERT INTO reader... " />
-            <marker date="1507471628572" expanded="true" signature="3912:3951" ph="SELECT * FRO... reader" />
-            <marker date="1507471628572" expanded="true" signature="4068:4106" ph="SELECT reade... reader" />
-            <marker date="1507471628572" expanded="true" signature="6913:6951" ph="SELECT * FRO... reader" />
-            <marker date="1507471628572" expanded="true" signature="7057:7121" ph="SELECT reade... reader" />
-            <marker date="1507471628572" expanded="true" signature="7057:7127" ph="SELECT reade... reader" />
-            <marker date="1507471628572" expanded="true" signature="8412:8455" ph="SELECT book_... " />
-            <marker date="1507471628572" expanded="true" signature="8412:8513" ph="SELECT *FROM... booksWHERE" />
-            <marker date="1507471628572" expanded="true" signature="10142:10149" ph="SELECT book_... books" />
-            <marker date="1507471628572" expanded="true" signature="10142:10241" ph="SELECT *FROM... booksWHERE" />
-            <marker date="1507471628572" expanded="true" signature="11878:11885" ph="SELECT book_... " />
-            <marker date="1507471628572" expanded="true" signature="11878:11921" ph="SELECT *FROM... booksmissingValue" />
-            <marker date="1507471628572" expanded="true" signature="11878:11973" ph="SELECT *FROM... booksWHERE" />
-            <marker date="1507471628572" expanded="true" signature="11878:11983" ph="SELECT *FROM... booksWHERE" />
-            <marker date="1507471628572" expanded="true" signature="13617:13624" ph="SELECT book_... " />
-            <marker date="1507471628572" expanded="true" signature="13617:13711" ph="SELECT *FROM... booksWHERE" />
-            <marker date="1507471628572" expanded="true" signature="13617:13720" ph="SELECT *FROM... books" />
-            <marker date="1507471628572" expanded="true" signature="16645:16701" ph="SELECT reasd... reader" />
-            <marker date="1507471628572" expanded="true" signature="16645:16703" ph="SELECT reasd... reader" />
-            <marker date="1507471628572" expanded="true" signature="16645:16714" ph="SELECT reade... reader" />
-            <marker date="1507471628572" expanded="true" signature="17334:17389" ph="SELECT passw... reader" />
-            <marker date="1507471628572" expanded="true" signature="17334:17391" ph="SELECT passw... reader" />
-            <marker date="1507471628572" expanded="true" signature="17334:17404" ph="SELECT passw... reader" />
+            <marker date="1507478733430" expanded="false" signature="1844:1861" ph="..." />
+            <marker date="1507478733430" expanded="false" signature="1961:1975" ph="..." />
+            <marker date="1507478733430" expanded="false" signature="2040:2054" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RelatedObjects/BorrowedItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#1023#1024#0" expanded="false" />
+            <element signature="e#1053#1054#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/librarian_message.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RelatedObjects/BorrowedItemList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="e#678#679#0" expanded="false" />
+            <element signature="e#728#729#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/librarian/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3184">
+          <caret line="120" column="90" lean-forward="false" selection-start-line="120" selection-start-column="90" selection-end-line="120" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DBData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="210" column="48" lean-forward="true" selection-start-line="210" selection-start-column="48" selection-end-line="210" selection-end-column="48" />
+          <folding>
+            <element signature="method#getReaders#0;class#DBData#0" expanded="false" />
+            <element signature="method#getLibrarianByID#0;class#DBData#0" expanded="false" />
+            <element signature="method#getReaderByID#0;class#DBData#0" expanded="false" />
+            <element signature="method#getBookByID#0;class#DBData#0" expanded="false" />
+            <marker date="1508432747582" expanded="true" signature="856:1002" ph="SELECT * FRO... reader" />
+            <marker date="1508432747582" expanded="true" signature="2679:2716" ph="SELECT * FRO... reader" />
+            <marker date="1508432747582" expanded="true" signature="3694:3731" ph="SELECT * FRO... reader" />
+            <marker date="1508432747582" expanded="true" signature="5339:5381" ph="SELECT * FRO... books" />
+            <marker date="1508432747582" expanded="true" signature="6266:6302" ph="DELETE FROM " />
+            <marker date="1508432747582" expanded="true" signature="6703:6736" ph="DELETE FROM " />
+            <marker date="1508432747582" expanded="true" signature="7254:7401" ph="INSERT INTO reader... " />
+            <marker date="1508432747582" expanded="true" signature="8319:8448" ph="INSERT INTO books... " />
+            <marker date="1508432747582" expanded="true" signature="9279:9366" ph="SELECT COUNT... reserve_books" />
+            <marker date="1508432747582" expanded="true" signature="9408:9497" ph="SELECT book_... books" />
+            <marker date="1508432747582" expanded="true" signature="10538:10631" ph="INSERT INTO reserve_books... " />
+            <marker date="1508432747582" expanded="true" signature="10670:10725" ph="UPDATE books... " />
+            <marker date="1508432747582" expanded="true" signature="11252:11360" ph="UPDATE rever... " />
+            <marker date="1508432747582" expanded="true" signature="11429:11485" ph="UPDATE books... " />
+            <marker date="1508432747582" expanded="true" signature="11977:12024" ph="SELECT reade... reader" />
+            <marker date="1508432747582" expanded="true" signature="12329:12495" ph="select * fro... borrow_books" />
+            <marker date="1508432747582" expanded="true" signature="12374:12479" ph="select book_... books" />
+            <marker date="1508432747582" expanded="true" signature="12419:12463" ph="SELECT book_... books" />
+            <marker date="1508432747582" expanded="true" signature="12808:12903" ph="SELECT COUNT... borrow_books" />
+            <marker date="1508432747582" expanded="true" signature="13304:13396" ph="INSERT INTO borrow_books... " />
+            <marker date="1508432747582" expanded="true" signature="13805:13897" ph="INSERT INTO borrow_books... " />
+            <marker date="1508432747582" expanded="true" signature="14508:14631" ph="UPDATE borro... " />
+            <marker date="1508432747582" expanded="true" signature="15076:15136" ph="SELECT * FRO... borrow_books" />
+            <marker date="1508432747582" expanded="true" signature="15771:15814" ph="SELECT * FRO... borrow_books" />
+            <marker date="1508432747582" expanded="true" signature="17203:17241" ph="SELECT * FRO... inquire" />
+            <marker date="1508432747582" expanded="true" signature="17799:17891" ph="SELECT * FRO... borrow_books" />
+            <marker date="1508432747582" expanded="true" signature="18116:18156" ph="SELECT * FRO... books" />
+            <marker date="1508432747582" expanded="true" signature="18862:18898" ph="SELECT * FRO... book_tag" />
+            <marker date="1508432747582" expanded="true" signature="19133:19169" ph="SELECT * FRO... books" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlet/AddBookServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RelatedObjects/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/addBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="69" lean-forward="false" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#6;n#table#0;n#FORM#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/librarian_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="89" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2673">
+          <caret line="81" column="7" lean-forward="false" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RelatedObjects/Librarian.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-957">
-          <caret line="81" column="113" lean-forward="false" selection-start-line="81" selection-start-column="113" selection-end-line="81" selection-end-column="113" />
+        <state relative-caret-position="1749">
+          <caret line="82" column="74" lean-forward="false" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
           <folding>
-            <marker date="1507469612502" expanded="true" signature="4251:4257" ph="{}" />
             <marker date="1507469612502" expanded="true" signature="4669:4723" ph="UPDATE reade... " />
             <marker date="1507469612502" expanded="true" signature="5263:5302" ph="select count... books" />
             <marker date="1507469612502" expanded="true" signature="6135:6173" ph="select book_... " />
@@ -1080,19 +1048,64 @@
             <marker date="1507469612502" expanded="true" signature="7617:7664" ph="UPDATE reade... " />
             <marker date="1507469612502" expanded="true" signature="8236:8283" ph="UPDATE reade... " />
             <marker date="1507469612502" expanded="true" signature="8841:8888" ph="UPDATE reade... " />
-            <marker date="1507469612502" expanded="true" signature="9434:9501" ph="UPDATE reade... " />
-            <marker date="1507469612502" expanded="true" signature="9434:9503" ph="UPDATE reade... " />
             <marker date="1507469612502" expanded="true" signature="9434:9512" ph="UPDATE reade... " />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/RelatedObjects/LibraryManagementSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8877">
+          <caret line="284" column="72" lean-forward="false" selection-start-line="284" selection-start-column="72" selection-end-line="284" selection-end-column="72" />
+          <folding>
+            <element signature="e#17952#17953#0" expanded="true" />
+            <element signature="e#17996#17997#0" expanded="true" />
+            <marker date="1508435124230" expanded="true" signature="1225:1544" ph="INSERT INTO reader... " />
+            <marker date="1508435124230" expanded="true" signature="2331:2636" ph="INSERT INTO reader... " />
+            <marker date="1508435124230" expanded="true" signature="3129:3434" ph="INSERT INTO reader... " />
+            <marker date="1508435124230" expanded="true" signature="3912:3951" ph="SELECT * FRO... reader" />
+            <marker date="1508435124230" expanded="true" signature="4068:4106" ph="SELECT reade... reader" />
+            <marker date="1508435124230" expanded="true" signature="6913:6951" ph="SELECT * FRO... reader" />
+            <marker date="1508435124230" expanded="true" signature="7057:7121" ph="SELECT reade... reader" />
+            <marker date="1508435124230" expanded="true" signature="7057:7127" ph="SELECT reade... reader" />
+            <marker date="1508435124230" expanded="true" signature="8412:8455" ph="SELECT book_... " />
+            <marker date="1508435124230" expanded="true" signature="8412:8513" ph="SELECT *FROM... booksWHERE" />
+            <marker date="1508435124230" expanded="true" signature="8412:8556" ph="SELECT *FROM... books" />
+            <marker date="1508435124230" expanded="true" signature="10185:10192" ph="SELECT book_... books" />
+            <marker date="1508435124230" expanded="true" signature="10185:10284" ph="SELECT *FROM... booksWHERE" />
+            <marker date="1508435124230" expanded="true" signature="10185:10303" ph="SELECT *FROM... books" />
+            <marker date="1508435124230" expanded="true" signature="11940:11947" ph="SELECT book_... " />
+            <marker date="1508435124230" expanded="true" signature="11940:11983" ph="SELECT *FROM... booksmissingValue" />
+            <marker date="1508435124230" expanded="true" signature="11940:12035" ph="SELECT *FROM... booksWHERE" />
+            <marker date="1508435124230" expanded="true" signature="11940:12045" ph="SELECT *FROM... booksWHERE" />
+            <marker date="1508435124230" expanded="true" signature="11940:12064" ph="SELECT *FROM... books" />
+            <marker date="1508435124230" expanded="true" signature="13698:13705" ph="SELECT book_... " />
+            <marker date="1508435124230" expanded="true" signature="13698:13792" ph="SELECT *FROM... booksWHERE" />
+            <marker date="1508435124230" expanded="true" signature="13698:13801" ph="SELECT *FROM... books" />
+            <marker date="1508435124230" expanded="true" signature="13698:13820" ph="SELECT *FROM... books" />
+            <marker date="1508435124230" expanded="true" signature="16745:16801" ph="SELECT reasd... reader" />
+            <marker date="1508435124230" expanded="true" signature="16745:16803" ph="SELECT reasd... reader" />
+            <marker date="1508435124230" expanded="true" signature="16745:16814" ph="SELECT reade... reader" />
+            <marker date="1508435124230" expanded="true" signature="17434:17489" ph="SELECT passw... reader" />
+            <marker date="1508435124230" expanded="true" signature="17434:17491" ph="SELECT passw... reader" />
+            <marker date="1508435124230" expanded="true" signature="17434:17504" ph="SELECT passw... reader" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/searchBook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2838">
+          <caret line="86" column="10" lean-forward="false" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RelatedObjects/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2343">
+        <state relative-caret-position="2706">
           <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1507466262732" expanded="true" signature="1671:1705" ph="UPDATE reade... " />
             <marker date="1507466262732" expanded="true" signature="1671:1721" ph="UPDATE reade... " />
             <marker date="1507466262732" expanded="true" signature="1671:1742" ph="UPDATE reade... " />
@@ -1106,103 +1119,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlet/DatabaseTestServlet.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.44-bin.jar!/com/mysql/jdbc/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="171">
+          <caret line="1015" column="0" lean-forward="false" selection-start-line="1015" selection-start-column="0" selection-end-line="1015" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/librarian/librarian_index.jsp">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.44-bin.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="151">
+          <caret line="300" column="0" lean-forward="false" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/searchBook.jsp">
+    <entry file="file://$PROJECT_DIR$/src/Database/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+        <state relative-caret-position="462">
+          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DBData.java">
+    <entry file="file://$PROJECT_DIR$/web/borrow.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-          <folding>
-            <marker date="1507482061774" expanded="true" signature="856:876" ph="SELECT * FRO... reader" />
-            <marker date="1507482061774" expanded="true" signature="856:900" ph="SELECT * FRO... reader" />
-            <marker date="1507482061774" expanded="true" signature="856:931" ph="SELECT * FRO... reader" />
-            <marker date="1507482061774" expanded="true" signature="856:1002" ph="SELECT * FRO... reader" />
-            <marker date="1507482061774" expanded="true" signature="2679:2716" ph="SELECT * FRO... reader" />
-            <marker date="1507482061774" expanded="true" signature="3694:3731" ph="SELECT * FRO... reader" />
-            <marker date="1507482061774" expanded="true" signature="5339:5381" ph="SELECT * FRO... books" />
-            <marker date="1507482061774" expanded="true" signature="6266:6302" ph="DELETE FROM " />
-            <marker date="1507482061774" expanded="true" signature="6703:6736" ph="DELETE FROM " />
-            <marker date="1507482061774" expanded="true" signature="7254:7401" ph="INSERT INTO reader... " />
-            <marker date="1507482061774" expanded="true" signature="8319:8458" ph="INSERT INTO books... " />
-            <marker date="1507482061774" expanded="true" signature="9238:9325" ph="SELECT COUNT... reserve_books" />
-            <marker date="1507482061774" expanded="true" signature="9367:9456" ph="SELECT book_... books" />
-            <marker date="1507482061774" expanded="true" signature="10497:10590" ph="INSERT INTO reserve_books... " />
-            <marker date="1507482061774" expanded="true" signature="10629:10684" ph="UPDATE books... " />
-            <marker date="1507482061774" expanded="true" signature="11211:11319" ph="UPDATE rever... " />
-            <marker date="1507482061774" expanded="true" signature="11388:11444" ph="UPDATE books... " />
-            <marker date="1507482061774" expanded="true" signature="11821:11916" ph="SELECT COUNT... borrow_books" />
-            <marker date="1507482061774" expanded="true" signature="12271:12363" ph="INSERT INTO borrow_books... " />
-            <marker date="1507482061774" expanded="true" signature="12733:12825" ph="INSERT INTO borrow_books... " />
-            <marker date="1507482061774" expanded="true" signature="13342:13465" ph="UPDATE borro... " />
-            <marker date="1507482061774" expanded="true" signature="13910:13953" ph="SELECT * FRO... borrow" />
-            <marker date="1507482061774" expanded="true" signature="13910:13954" ph="SELECT * FRO... borrow_books" />
-            <marker date="1507482061774" expanded="true" signature="13910:13970" ph="SELECT * FRO... borrow_books" />
-            <marker date="1507482061774" expanded="true" signature="14605:14648" ph="SELECT * FRO... borrow_books" />
-            <marker date="1507482061774" expanded="true" signature="16037:16075" ph="SELECT * FRO... inquire" />
-            <marker date="1507482061774" expanded="true" signature="16633:16725" ph="SELECT * FRO... borrow_books" />
-            <marker date="1507482061774" expanded="true" signature="16950:16990" ph="SELECT * FRO... books" />
-            <marker date="1507482061774" expanded="true" signature="17696:17732" ph="SELECT * FRO... book_tag" />
-            <marker date="1507482061774" expanded="true" signature="17967:18003" ph="SELECT * FRO... books" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/deleteBook.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="141" column="11" lean-forward="true" selection-start-line="136" selection-start-column="4" selection-end-line="141" selection-end-column="11" />
-          <folding>
-            <marker date="1507478733430" expanded="false" signature="1844:1861" ph="..." />
-            <marker date="1507478733430" expanded="false" signature="1961:1975" ph="..." />
-            <marker date="1507478733430" expanded="false" signature="2040:2054" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/deleteReader.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="96" column="91" lean-forward="false" selection-start-line="96" selection-start-column="91" selection-end-line="96" selection-end-column="91" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#span#1;n#p#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlet/DeleteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/librarian_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="44" column="109" lean-forward="false" selection-start-line="44" selection-start-column="109" selection-end-line="44" selection-end-column="109" />
+        <state relative-caret-position="33">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>

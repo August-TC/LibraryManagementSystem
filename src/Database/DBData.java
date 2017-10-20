@@ -207,7 +207,8 @@ public class DBData
         {
             return false;
         }
-        PreparedStatement statement = connection.prepareStatement("INSERT INTO books (book_copy,book_name,book_author,book_introduction,book_location,book_publish,book_state,book_id) VALUES(?,?,?,?,?,?,?,?)");
+        PreparedStatement statement = connection.prepareStatement("INSERT INTO books (book_copy,book_name,book_author,book_introduction,book_location,book_publish,book_state) VALUES(?,?,?,?,?,?,?)");
+        System.out.println(book.getBook_copy());
         statement.setString(1,book.getBook_copy());
         statement.setString(2,book.getBook_name());
         statement.setString(3,book.getBook_author());
@@ -215,7 +216,7 @@ public class DBData
         statement.setString(5,book.getBook_location());
         statement.setString(6,book.getBook_publish());
         statement.setString(7,book.getBook_state());
-        statement.setString(8,book.getBook_id());
+        //statement.setString(8,book.getBook_id());
         int count = statement.executeUpdate();
         return count == 1;
     }
@@ -283,37 +284,58 @@ public class DBData
     /*******借书*****/
     public boolean borrowBook(Connection connection, int reader_id, String reader_type, String book_id) throws SQLException
     {
-        Statement statement = connection.createStatement();
-        String sql = "SELECT COUNT(user_id) FROM borrow_books WHERE reader_id = " + reader_id + "AND borrow_state = 1";//sql查询用户已借书的数量
-        ResultSet resultSet = statement.executeQuery(sql);
-        /*****不同读者的限制***/
-        while(resultSet.next())
-        {
-            switch (reader_type) {
-                case "Teacher":
-                    if (resultSet.getInt(0) < 15) {
-                        Date now = new Date();
-                        String insertSql = "INSERT INTO borrow_books VALUES("+reader_id + ", "+book_id + ", "+ now.toString() + ", 1"+")";
-                        statement.executeUpdate(insertSql);
-                    }else {
-                        System.out.println("借书达到限额");
-                    }
-                    break;
-
-                case "Student":
-                    if (resultSet.getInt(0) < 10) {
-                        Date now = new Date();
-                        String insertSql = "INSERT INTO borrow_books VALUES("+reader_id + ", "+book_id + ", "+ now.toString() + ", 1"+")";
-                        statement.executeUpdate(insertSql);
-                    }else {
-                        System.out.println("借书达到限额");
-                    }
-                    break;
-            }
+        /*********判断读者是否有欠款*******/
+        float reader_fine = 0;
+        boolean bool_alike = false;
+        Statement check_statement = connection.createStatement();
+        String check_sql = "SELECT reader_fine FROM reader WHERE reader_id=" + reader_id;
+        ResultSet check = check_statement.executeQuery(check_sql);
+        while(check.next()){
+            reader_fine = check.getFloat("reader_fine");
         }
-        resultSet.close();
-        statement.close();
-        return true;
+        /*********判断是否结果相同的书*******/
+        Statement alike_check = connection.createStatement();
+        String alike_sql = "select * from borrow_books where book_id in (select book_id from books where book_copy = (SELECT book_copy from books where book_id = " + book_id + ")) and user_id = " + reader_id;
+        ResultSet alike = alike_check.executeQuery(alike_sql);
+        if(alike.next()){
+            bool_alike = true;
+        }
+        /******************/
+        if(reader_fine==0 && bool_alike==false){
+            Statement statement = connection.createStatement();
+            String sql = "SELECT COUNT(user_id) FROM borrow_books WHERE reader_id = " + reader_id + "AND borrow_state = 1";//sql鏌ヨ鐢ㄦ埛宸插�熶功鐨勬暟閲�
+            ResultSet resultSet = statement.executeQuery(sql);
+            /*****涓嶅悓璇昏�呯殑闄愬埗***/
+            while(resultSet.next())
+            {
+                switch (reader_type) {
+                    case "Teacher":
+                        if (resultSet.getInt(0) < 15) {
+                            Date now = new Date();
+                            String insertSql = "INSERT INTO borrow_books VALUES("+reader_id + ", "+book_id + ", "+ now.toString() + ", 1"+")";
+                            statement.executeUpdate(insertSql);
+                        }else {
+                            System.out.println("鍊熶功杈惧埌闄愰");
+                        }
+                        break;
+
+                    case "Student":
+                        if (resultSet.getInt(0) < 10) {
+                            Date now = new Date();
+                            String insertSql = "INSERT INTO borrow_books VALUES("+reader_id + ", "+book_id + ", "+ now.toString() + ", 1"+")";
+                            statement.executeUpdate(insertSql);
+                        }else {
+                            System.out.println("鍊熶功杈惧埌闄愰");
+                        }
+                        break;
+                }
+            }
+            resultSet.close();
+            statement.close();
+            return true;
+        }else{
+            return false;
+        }
     }
 
     /*******还书****/

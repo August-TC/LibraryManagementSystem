@@ -30,13 +30,13 @@ public class Book
     //This constructor is used for librarian to add books, so the default state is "Available"
     public Book(String book_copy, String book_name, String book_author, String book_introduction, String book_location, String book_publish)
     {
-        this.book_copy = book_id;
+        this.book_copy = book_copy;
         this.book_name = book_name;
         this.book_author = book_author;
         this.book_introduction = book_introduction;
         this.book_location = book_location;
         this.book_publish = book_publish;
-        this.book_id = UUID.randomUUID().toString();
+        //this.book_id = UUID.randomUUID().toString();
         book_state = "Available";
     }
 

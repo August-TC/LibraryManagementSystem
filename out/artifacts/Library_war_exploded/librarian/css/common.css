@@ -5,7 +5,7 @@
 
 h1, h2, h3, h4, h5, h6, p { padding: 0; margin: 0 auto; font-weight: normal; }
 
-body {background: #fff url(../images/bg.jpg) repeat top left;}
+body {background: #fff url(../librarian/images/bg.jpg) repeat top left;}
 
 #mylib_content{width:80%;padding:5px;margin-left:250px; height:100%;}
 .mylib_content_center{width:98%; text-align:center; margin-top:130px;}

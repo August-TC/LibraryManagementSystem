@@ -25,9 +25,9 @@
 			<ul id="nav_mylib">
 				<li><a href="searchBook.jsp" >searchBook</a></li>
 				<li><a href="index.jsp" >index</a></li>
-                <li><a href="accountInformation.html" >accountInformation</a></li>
-                <li><a href="reserveBook.html" >reserveBook</a></li>
-                <li><a href="borrowingHistory.jsp" >borrowingHistory</a></li>
+                <%--<li><a href="accountInformation.html" >accountInformation</a></li>--%>
+                <%--<li><a href="reserveBook.html" >reserveBook</a></li>--%>
+                <%--<li><a href="borrowingHistory.jsp" >borrowingHistory</a></li>--%>
                 <li><a href="modifyInformation.jsp" >modifyInformation</a></li>
                 <li><a href="modifyPwd.jsp" >modifyPassword</a></li>
 			</ul>

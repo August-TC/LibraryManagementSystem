@@ -3,7 +3,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>addBook</title>
-<link rel="stylesheet" type="text/css" href="/librarian/css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#b01").click(function() {
+        var url="https://api.douban.com/v2/book/isbn/"+$("#input_isbn").val()
+		var img_url=""
+		$.ajax({
+			url: url,
+            type: 'GET',
+            dataType: 'JSONP',
+			success: function (data) {
+				console.log(data);
+				$("#location").val(data.location);
+				$("#title").val(data.title);
+				$("#author").val(data.author[0]);
+				$("#publisher").val(data.publisher);
+                $("#pages").val(data.pages);
+                $("#binding").val(data.binding);
+                $("#summary").val(data.summary);
+                $("#pubdate").val(data.pubdate);
+                $("#image").attr("src",data.images.medium);
+			}
+		});
+    });
+});
+</script>
+
 </head>
 
 <body>
@@ -12,63 +39,94 @@
 	<h1>Online Library Management System</h1>
 </div>
 
+<div class="header_right header_right_top">
+      
+      <p class="header_right_font">
+        <strong><a href="javascript:location.href='searchBook.jsp'" style="color:#666; font-size:24px;">login out</a></strong></p>
+      <p class="header_right_font">       </p>
+</div>
+
 <div id="mylib_content" >
   	<h2>add book</h2>
   	<div style="float:left; width:350px;" >
-		<FORM ACTION="/addBook" METHOD="POST"  onsubmit="return checkEmail(this)">
+		<FORM ACTION="/addBook" METHOD="POST" >
 				<input type="hidden" id="readerToken" name="readerToken" value="" />
 				<table width="350" border="0" cellpadding="3" cellspacing="2">
 				  <tr>
-				    <td align="right">*ID: </td>
-				    <td align="left"><input name="add_id"class="input" type="text" size="25" value="" required/></td>
+				    <td align="right">*ISBN: </td>
+				    <td align="left"><input type="text" id="input_isbn" value="" name="add_id">
+                    </td>
 				  </tr>
                   <tr>
-				    <td align="right">*Name: </td>
-				    <td align="left"><input name="add_name" class="input" type="text" size="25" value="" required/></td>
-				  </tr>
-				  <tr>
-				    <td align="right">*Author: </td>
-				    <td align="left"><input name="add_author" class="input" type="text" size="25" value="" required/></td>
-				  </tr>
-				  <!--tr>
-				    <td align="right">Image: </td>
-				    <td align="left"><input name="submit" type="file" size="25" value="上传图片" /></td>
-				  </tr-->
-				  				  <tr>
-				    <td align="right">*Location</td>
-				    <td align="left"><input name="add_location" class="input" type="text" size="25" value="" required/></td>
-				  </tr>
-				  <!--tr>
-				    <td align="right">*Price: </td>
-				    <td align="left"><input name="add_price" class="input" type="text" size="25" value="" required/></td>
-				  </tr-->
-				  <tr>
-				    <td align="right">Press: </td>
-				    <td align="left"><input name="add_press" class="input" type="text" size="25" value="" /></td>
-				  </tr>
-				  <tr>
-				    <td align="right">*State: </td>
-				    <td align="left"><input name="add_state" class="input" type="text" size="25" value="" required/></td>
+				    <td align="right"></td>
+				    <td align="left"><input id="b01" type="button" size="25" value="get book" /></td>
 				  </tr>
 					<tr>
-						<td align="right">*Quantity: </td>
-						<td align="left"><input name="add_quantity" class="input" type="text" size="25" value="3" required/></td>
+						<td align="right">Name: </td>
+						<td align="left"><input type="text" id="title" name="add_name"></td>
 					</tr>
-                  <tr>
-				    <td align="right">Introduction: </td>
-				    <td align="left"><input name="add_intro" class="input" type="text" size="25" value="" /></td>
+				  <tr>
+				    <td align="right">Author: </td>
+				    <td align="left"><input type="text" id="author" name="add_author"></td>
+				  </tr>
+					<tr>
+						<td align="right">Quantity: </td>
+						<td align="left"><input type="text" id="quantity" value="3" name="add_quantity"></td>
+					</tr>
+				  <tr>
+				    <td align="right">Publisher: </td>
+				    <td align="left">
+                       <input type="text" id="publisher" name="add_press">
+
+                       <!--<input id="location" type="radio" class="input" name="location" required="required" />ChangAn
+                       <input id="location" type="radio" class="input" name="location" />YouYi-->
+                    </td>
+				  </tr>
+					<tr>
+						<td align="right">Location: </td>
+						<td align="left"><select style="width:183px" name="add_location">
+							<option value="ChangAn" selected="selected">ChangAn</option>
+							<option value="YouYi">YouYi</option>
+						</select></td>
+					</tr>
+				  <tr>
+				    <td align="right">Pubdate: </td>
+				    <td align="left"><input type="text" id="pubdate"></td>
+				  </tr>
+				  <tr>
+				    <td align="right">Pages: </td>
+				    <td align="left"><input type="text" id="pages"></td>
+				  </tr>
+				  <tr>
+				    <td align="right">binding: </td>
+				    <td align="left"><input type="text" id="binding"></td>
 				  </tr>
                   <tr>
-				    <td align="right">Tag: </td>
-				    <td align="left"><input name="add_tag" class="input" type="text" size="25" value="" /></td>
+				    <td align="right">Introduction: </td>
+				    <td align="left"><textarea id="summary" rows="10" cols="30" name="add_intro" maxlength="1500"></textarea></td>
+				  </tr>
+                  <tr>
+				    <td align="right">images: </td>
+				    <td align="left"><div id="images"><img id="image" src=""></td>
 				  </tr>
 				  <tr>
 				  	<td></td>
 				    <td height="26" colspan="2"><input type="submit" name="submit1" class="btn btn-success"  value="OK"> <input type="button" value="Cancel" class="btn" onclick="javascript:location.href='librarian_index.jsp'"/></td>
-				    </tr>
+				  </tr>
 				</table>
 		</FORM>				
 	</div>
+	
+    
+    <div id="right_con">
+          <h5>Tip</h5>
+          <div id="content_note">
+            <ul>
+               <li>The symbol(*)is mandatory;</li>
+               <li>After you fill out your Email address correctly, you can login to my library via Email.</li>
+            </ul>
+        </div>
+      </div>
 
   </div>
   <div class="clear"></div>

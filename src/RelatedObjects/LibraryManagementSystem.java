@@ -236,7 +236,8 @@ public class LibraryManagementSystem
             stmt = conn.createStatement();
             String sql = "SELECT *"
                     + "FROM books "
-                    +"WHERE book_name LIKE '%"+name+"%'";
+                    +"WHERE book_name LIKE '%"+name+"%' "
+                    +"group by book_copy";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 String string1 = rs.getString("book_id");
@@ -281,7 +282,7 @@ public class LibraryManagementSystem
             stmt = conn.createStatement();
             String sql = "SELECT *"
                     + "FROM books "
-                    +"WHERE book_copy LIKE '%"+id+"%'";
+                    +"WHERE book_copy LIKE '%"+id+"%' group by book_name";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 String string1 = rs.getString("book_id");
@@ -326,7 +327,7 @@ public class LibraryManagementSystem
             stmt = conn.createStatement();
             String sql = "SELECT *"
                     + "FROM books "
-                    +"WHERE book_author LIKE '%"+auther+"%'";
+                    +"WHERE book_author LIKE '%"+auther+"%' group by book_name";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 String string1 = rs.getString("book_id");
@@ -371,7 +372,7 @@ public class LibraryManagementSystem
             stmt = conn.createStatement();
             String sql = "SELECT *"
                     + "FROM books "
-                    +"WHERE book_press LIKE '%"+press+"%'";
+                    +"WHERE book_press LIKE '%"+press+"%' group by book_name";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 String string1 = rs.getString("book_id");
@@ -504,6 +505,16 @@ public class LibraryManagementSystem
     public void checkBookState()
     {
 
+    }
+
+    public void setCrt_reader(Reader crt_reader)
+    {
+        this.crt_reader = crt_reader;
+    }
+
+    public void setCurrent_librarian(Librarian current_librarian)
+    {
+        this.current_librarian = current_librarian;
     }
 
     // [R1-18] Teacher retrun books

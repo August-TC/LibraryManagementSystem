@@ -22,9 +22,9 @@ public class AddBookServlet extends HttpServlet
         String add_location = request.getParameter("add_location");
         String add_quantity = request.getParameter("add_quantity");
         String add_press = request.getParameter("add_press");
-        String add_state = request.getParameter("add_state");
+        String add_state = "Available";//request.getParameter("add_state");
         String add_intro = request.getParameter("add_intro");
-        String add_tag = request.getParameter("add_tag");
+        //String add_tag = request.getParameter("add_tag");
 
         int quantity = Integer.parseInt(add_quantity);
 
@@ -42,11 +42,16 @@ public class AddBookServlet extends HttpServlet
             {
                 message = "Fail to add a book......";
             }
-            request.setAttribute("message",message);
-            request.getRequestDispatcher("librarian_message.jsp").forward(request,response);
+
         } catch (SQLException e)
         {
             e.printStackTrace();
+            message = "Fail to add a book cause "+e.getMessage();
+        }
+        finally
+        {
+            request.setAttribute("message",message);
+            request.getRequestDispatcher("librarian_message.jsp").forward(request,response);
         }
     }
 

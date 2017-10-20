@@ -10,7 +10,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>searchBook</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-
 </head>
 
 <body>
@@ -30,9 +29,9 @@
 			<ul id="nav_mylib">
                 <li><a href="searchBook.jsp" >searchBook</a></li>
 				<li><a href="index.jsp" >index</a></li>
-                <li><a href="accountInformation.html" >accountInformation</a></li>
-                <li><a href="reserveBook.html" >reserveBook</a></li>
-                <li><a href="borrowingHistory.jsp" >borrowingHistory</a></li>
+                <%--<li><a href="accountInformation.html" >accountInformation</a></li>--%>
+                <%--<li><a href="reserveBook.html" >reserveBook</a></li>--%>
+                <%--<li><a href="borrowingHistory.jsp" >borrowingHistory</a></li>--%>
                 <li><a href="modifyInformation.jsp" >modifyInformation</a></li>
                 <li><a href="modifyPwd.jsp" >modifyPassword</a></li>
 			</ul>
@@ -78,7 +77,7 @@
 					<td   width="10%" align="center">Location</td>
 				    <td   width="10%">Press</td>
 					<td   width="10%" align="center">State</td>
-					<td   width="20%" align="center">Introduction</td>
+					<%--<td   width="20%" align="center">Introduction</td>--%>
                     <!--td   width="10%" align="center">Tags</td-->
 				</tr>
       <%
@@ -123,7 +122,7 @@
                   out.println("<td   width=\"10%\" align=\"center\">"+book.getBook_location()+"</td>");
                   out.println("<td   width=\"10%\">"+book.getBook_publish()+"</td>");
                   out.println("<td   width=\"10%\" align=\"center\">"+book.getBook_state()+"</td>");
-                  out.println("<td   width=\"20%\" align=\"center\">"+book.getBook_introduction()+"</td>");
+                  //out.println("<td   width=\"20%\" align=\"center\">"+book.getBook_introduction()+"</td>");
                   //out.println("<td   width=\"10%\" align=\"center\">"+book."</td>");
                   out.println("</tr>");
               }

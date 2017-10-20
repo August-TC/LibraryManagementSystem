@@ -14,6 +14,7 @@ public class Database
 
     //the URL of database "result"
     private String url = "jdbc:mysql://39.108.94.59:3306/library?useUnicode=true&characterEncoding=UTF-8";
+    private String local_url = "jdbc:mysql://127.0.0.1:3306/library?useUnicode=true&characterEncoding=UTF-8";
 
     //User name of MySQL
     private String user = "reader";
@@ -50,7 +51,21 @@ public class Database
             e.printStackTrace();
         } catch (SQLException e)
         {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            try{
+                connection = DriverManager.getConnection(
+                        local_url,
+                        user,
+                        password
+                );
+                if(!connection.isClosed())
+                {
+                    System.out.println("Succeeded connecting to the Local Database!");
+                }
+            } catch (SQLException e1)
+            {
+                e1.printStackTrace();
+            }
         }
     }
 

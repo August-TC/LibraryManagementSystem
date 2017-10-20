@@ -20,10 +20,10 @@
 		<div id="navsidebar">
 			<ul id="nav_mylib">
 				<li><a href="index.jsp" >index</a></li>
-                <li><a href="accountInformation.html" >accountInformation</a></li>
+                <%--<li><a href="accountInformation.html" >accountInformation</a></li>--%>
                 <li><a href="searchBook.jsp" >searchBook</a></li>
-                <li><a href="reserveBook.html" >reserveBook</a></li>
-                <li><a href="borrowingHistory.jsp" >borrowingHistory</a></li>
+                <%--<li><a href="reserveBook.html" >reserveBook</a></li>--%>
+                <%--<li><a href="borrowingHistory.jsp" >borrowingHistory</a></li>--%>
                 <li><a href="modifyInformation.jsp" >modifyInformation</a></li>
                 <li><a href="modifyPwd.jsp" >modifyPassword</a></li>
 			</ul>
@@ -39,6 +39,10 @@
 			<ul class="address">
 				<%
 					Reader reader = LibraryManagementSystem.getInstance().getCrt_reader();
+					if(reader == null)
+					{
+					    request.getRequestDispatcher("login.html").forward(request,response);
+					}
 				%>
 													<li>
 														<ul class="address-text">
@@ -65,14 +69,17 @@
 														</ul>
 													</li>
 			  </ul>
-				
-				<div class="buttonright">
-					<a href="accountInformation.html" class="play-icon popup-with-zoom-anim">check the information</a>
-				</div>
+			<p class="header_right_font"></p>
+            <%--<form action="/Login" method="post">--%>
+                <%--<input type="submit" value="log out" />--%>
+            <%--</form>--%>
+			<p class="header_right_font">       </p>
 
 		</div>
 
-        
+<form action="/Login" method="post">
+    <center><input type="submit" value="log out"/></center>
+</form>
 <div class="clear"></div>
   
 <div id="footer"><div id="copy"><p>Northwestern Polytechnical University</p></div></div>
